@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/steel_pickaxe",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Almost the Best Pickaxe"
+    },
+    "description": {
+      "text": "Upgrade your pickaxe yet again"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_pickaxe"
+    ]
+  ]
+}

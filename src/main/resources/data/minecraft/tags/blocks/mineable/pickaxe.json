@@ -1,0 +1,44 @@
+{
+  "replace": false,
+  "values": [
+    "nether_expanded:crimsonite_ore",
+    "nether_expanded:nether_iron_ore",
+    "nether_expanded:nether_copper_ore",
+    "nether_expanded:ruby_ore",
+    "nether_expanded:amethyst_ore",
+    "nether_expanded:nether_emerald_ore",
+    "nether_expanded:nether_lapis_ore",
+    "nether_expanded:nether_diamond_ore",
+
+    "nether_expanded:bronze_block",
+    "nether_expanded:crimsonite_block",
+    "nether_expanded:enderite_block",
+    "nether_expanded:ruby_block",
+    "nether_expanded:steel_block",
+
+    "nether_expanded:blood_altar",
+    "nether_expanded:bleeding_obsidian",
+    "nether_expanded:blackstone_furnace",
+    "nether_expanded:nether_blast_furnace",
+    "nether_expanded:forge",
+
+    "nether_expanded:soul_stone",
+
+    "nether_expanded:chiseled_bloodstone",
+    "nether_expanded:cracked_bloodstone",
+    "nether_expanded:bloodstone",
+    "nether_expanded:bloodstone_stairs",
+    "nether_expanded:bloodstone_slab",
+    "nether_expanded:bloodstone_wall",
+    "nether_expanded:bloodstone_bricks",
+    "nether_expanded:bloodstone_brick_stairs",
+    "nether_expanded:bloodstone_brick_slab",
+    "nether_expanded:bloodstone_brick_wall",
+    "nether_expanded:polished_bloodstone",
+    "nether_expanded:polished_bloodstone_stairs",
+    "nether_expanded:polished_bloodstone_slab",
+    "nether_expanded:polished_bloodstone_wall",
+    "nether_expanded:bloodstone_pressure_plate",
+    "nether_expanded:bloodstone_button"
+  ]
+}

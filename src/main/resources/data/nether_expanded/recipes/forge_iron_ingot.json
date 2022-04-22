@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:pig_iron"
+    },
+    {
+      "item": "nether_expanded:pig_iron"
+    }
+  ],
+  "output": {
+    "item": "minecraft:iron_ingot"
+  }
+}

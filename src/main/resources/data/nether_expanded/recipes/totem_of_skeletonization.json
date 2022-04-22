@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bone"
+  },
+  "addition": {
+    "item": "nether_expanded:mystical_powder"
+  },
+  "result": {
+    "item": "requiem:totem_of_skeletonization"
+  }
+}

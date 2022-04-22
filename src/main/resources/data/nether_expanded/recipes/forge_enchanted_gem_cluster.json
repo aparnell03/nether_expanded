@@ -1,0 +1,14 @@
+{
+    "type": "nether_expanded:forge",
+    "ingredients": [
+        {
+            "item": "nether_expanded:gem_cluster"
+        },
+        {
+            "item": "nether_expanded:mystical_powder"
+        }
+    ],
+    "output": {
+        "item": "nether_expanded:enchanted_gem_cluster"
+    }
+}

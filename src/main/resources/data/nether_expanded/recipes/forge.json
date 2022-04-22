@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nether_expanded:polished_bloodstone"
+    },
+    "X": {
+      "item": "nether_expanded:nether_blast_furnace"
+    },
+    "I": {
+      "item": "nether_expanded:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:forge"
+  }
+}

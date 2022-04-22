@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "nether_expanded:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:bronze_chestplate"
+  }
+}

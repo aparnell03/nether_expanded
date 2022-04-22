@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#":
+    {
+      "item": "nether_expanded:bleeding_obsidian"
+    },
+    "X":
+    {
+      "item": "nether_expanded:flesh_block"
+    }
+
+  },
+  "result": {
+    "item": "nether_expanded:blood_altar"
+  }
+}

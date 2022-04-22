@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:nether/get_wither_skull",
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "text": "Making Progress"
+    },
+    "description": {
+      "text": "Obtain 3 Wither Skulls"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "skulls": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wither_skeleton_skull"
+            ],
+			"count":{
+				"min":3
+			}
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skulls"
+    ]
+  ]
+}

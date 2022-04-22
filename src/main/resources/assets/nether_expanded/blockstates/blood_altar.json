@@ -1,0 +1,43 @@
+{
+  "variants": {
+    "charges=0": {
+      "model": "nether_expanded:block/blood_altar_0"
+    },
+    "charges=1": {
+      "model": "nether_expanded:block/blood_altar_1"
+    },
+    "charges=2": {
+      "model": "nether_expanded:block/blood_altar_2"
+    },
+    "charges=3": {
+      "model": "nether_expanded:block/blood_altar_3"
+    },
+    "charges=4": {
+      "model": "nether_expanded:block/blood_altar_4"
+    },
+    "charges=5": {
+      "model": "nether_expanded:block/blood_altar_5"
+    },
+    "charges=6": {
+      "model": "nether_expanded:block/blood_altar_6"
+    },
+    "charges=7": {
+      "model": "nether_expanded:block/blood_altar_7"
+    },
+    "charges=8": {
+      "model": "nether_expanded:block/blood_altar_8"
+    },
+    "charges=9": {
+      "model": "nether_expanded:block/blood_altar_9"
+    },
+    "charges=10": {
+      "model": "nether_expanded:block/blood_altar_10"
+    },
+    "charges=11": {
+      "model": "nether_expanded:block/blood_altar_11"
+    },
+    "charges=12": {
+      "model": "nether_expanded:block/blood_altar_12"
+    }
+  }
+}

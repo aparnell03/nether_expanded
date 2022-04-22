@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nether_expanded:crimsonite_scrap"
+        },
+        {
+            "item": "nether_expanded:crimsonite_scrap"
+        },
+        {
+            "item": "nether_expanded:crimsonite_scrap"
+        },
+        {
+            "item": "nether_expanded:crimsonite_scrap"
+        },
+        {
+            "item": "nether_expanded:bronze_ingot"
+        },
+        {
+            "item": "nether_expanded:bronze_ingot"
+        },
+        {
+            "item": "nether_expanded:bronze_ingot"
+        },
+        {
+            "item": "nether_expanded:bronze_ingot"
+        }
+    ],
+    "result": {
+        "item": "nether_expanded:raw_crimsonite",
+        "count": 1
+    }
+}

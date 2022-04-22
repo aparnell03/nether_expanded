@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CRC",
+    "R#R",
+    "CRC"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "R": {
+      "item": "nether_expanded:ruby"
+    },
+    "C": {
+      "item": "nether_expanded:crimsonite_ingot"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:bleeding_obsidian",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "nether_expanded:pig_iron"
+    },
+    "result": "minecraft:iron_nugget",
+    "experience": 0.0,
+    "cookingtime": 100
+}

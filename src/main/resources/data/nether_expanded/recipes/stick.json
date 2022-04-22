@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X"
+  ],
+  "key": {
+    "X": [
+      {
+        "item": "minecraft:wooden_pickaxe"
+      },
+      {
+        "item": "minecraft:wooden_shovel"
+      },
+      {
+        "item": "minecraft:wooden_sword"
+      },
+      {
+        "item": "minecraft:wooden_hoe"
+      },
+      {
+        "item": "minecraft:wooden_axe"
+      },
+      {
+        "item": "nether_expanded:crimson_pickaxe"
+      },
+      {
+        "item": "nether_expanded:crimson_shovel"
+      },
+      {
+        "item": "nether_expanded:crimson_sword"
+      },
+      {
+        "item": "nether_expanded:crimson_hoe"
+      },
+      {
+        "item": "nether_expanded:crimson_axe"
+      },
+      {
+        "item": "nether_expanded:warped_pickaxe"
+      },
+      {
+        "item": "nether_expanded:warped_shovel"
+      },
+      {
+        "item": "nether_expanded:warped_sword"
+      },
+      {
+        "item": "nether_expanded:warped_hoe"
+      },
+      {
+        "item": "nether_expanded:warped_axe"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 3
+  }
+}

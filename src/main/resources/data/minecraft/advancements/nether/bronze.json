@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/smith",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:bronze_ingot"
+    },
+    "title": {
+      "text": "Bronze!"
+    },
+    "description": {
+      "text": "Obtain a Bronze Ingot by combining a Copper Ingot with an Iron Nugget"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scrap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:bronze_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scrap"
+    ]
+  ]
+}

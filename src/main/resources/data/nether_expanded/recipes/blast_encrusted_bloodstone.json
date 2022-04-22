@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "nether_expanded:nether_diamond_ore"
+    },
+    "result": "minecraft:diamond",
+    "experience": 0.2,
+    "cookingtime": 1200
+}

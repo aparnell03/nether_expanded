@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether_expanded:soul_dust"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "nether_expanded:ectoplasm"
+    },
+    {
+      "item": "nether_expanded:copper_nugget"
+    }
+  ],
+  "result": {
+    "item": "nether_expanded:lightning_powder"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "nether_expanded:crimsonite_ore",
+    "nether_expanded:ruby_ore",
+    "nether_expanded:amethyst_ore",
+    "nether_expanded:nether_emerald_ore",
+    "nether_expanded:nether_diamond_ore",
+    "nether_expanded:bronze_block",
+    "nether_expanded:ruby_block",
+    "nether_expanded:soul_stone"
+  ]
+}

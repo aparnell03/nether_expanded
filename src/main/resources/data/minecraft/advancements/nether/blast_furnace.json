@@ -1,0 +1,31 @@
+{
+    "parent": "minecraft:nether/bronze",
+    "display": {
+        "title": {
+            "text": "For the Decent Stuff"
+        },
+        "description": {
+            "text": "Place a Blast Furnace, crafted with Bronze and Blackstone"
+        },
+        "icon": {
+            "item": "nether_expanded:nether_blast_furnace"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "nether_blast_furnace": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "nether_expanded:nether_blast_furnace"
+			}
+        }
+    },
+    "requirements": [
+      [
+        "nether_blast_furnace"
+      ]
+    ]
+}

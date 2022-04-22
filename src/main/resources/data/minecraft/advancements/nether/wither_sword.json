@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/encrusted_crimsonite_sword",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:wither_sword",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "All Shall Love it and Despair"
+    },
+    "description": {
+      "text": "For killing Gods"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wither_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_sword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wither_sword"
+    ]
+  ]
+}

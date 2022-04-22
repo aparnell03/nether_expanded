@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Escape!"
+        },
+        "description": {
+            "text": "Leave the Nether permanently"
+        },
+        "icon": {
+            "item": "minecraft:crying_obsidian"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "escaped": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "the_nether",
+                "to": "overworld"
+            }
+        }
+    },
+    "parent": "minecraft:nether/create_beacon"
+}

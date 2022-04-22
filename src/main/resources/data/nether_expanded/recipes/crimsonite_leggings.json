@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "nether_expanded:bronze_leggings"
+    },
+    "addition": {
+        "item": "nether_expanded:crimsonite_ingot"
+    },
+    "result": {
+        "item": "nether_expanded:crimsonite_leggings"
+    }
+}

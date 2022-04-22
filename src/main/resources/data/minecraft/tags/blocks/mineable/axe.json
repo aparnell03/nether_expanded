@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nether_expanded:crimson_crafting_table",
+    "nether_expanded:warped_crafting_table",
+    "nether_expanded:crimson_barrel",
+    "nether_expanded:warped_barrel"
+  ]
+}

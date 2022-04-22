@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "nether_expanded:block/polished_bloodstone"
+  }
+}

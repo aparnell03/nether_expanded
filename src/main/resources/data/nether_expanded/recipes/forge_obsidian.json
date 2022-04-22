@@ -1,0 +1,14 @@
+{
+    "type": "nether_expanded:forge",
+    "ingredients": [
+        {
+            "item": "minecraft:blackstone"
+        },
+        {
+            "item": "nether_expanded:bloodstone"
+        }
+    ],
+    "output": {
+        "item": "minecraft:obsidian"
+    }
+}

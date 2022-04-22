@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "nether_expanded:gilded_netherite_boots"
+    },
+    "addition": {
+        "item": "nether_expanded:demonite_ingot"
+    },
+    "result": {
+        "item": "nether_expanded:demonite_boots"
+    }
+}

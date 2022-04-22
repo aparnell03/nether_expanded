@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "nether_expanded:enchanted_quartz"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:quartz_staff"
+  }
+}

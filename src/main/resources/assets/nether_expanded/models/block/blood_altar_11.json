@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "nether_expanded:block/blood_altar_top",
+    "bottom": "nether_expanded:block/blood_altar_bottom",
+    "side": "nether_expanded:block/blood_altar_side11"
+  }
+}

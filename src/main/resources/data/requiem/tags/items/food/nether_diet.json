@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+  	"nether_expanded:bloodroot",
+  	"nether_expanded:crimson_heart",
+  	"nether_expanded:golden_heart",
+  	"nether_expanded:crimson_stew",
+  	"nether_expanded:warped_stew"
+  ]
+}

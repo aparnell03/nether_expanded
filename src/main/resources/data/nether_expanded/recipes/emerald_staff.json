@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "nether_expanded:enchanted_emerald"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:emerald_staff"
+  }
+}

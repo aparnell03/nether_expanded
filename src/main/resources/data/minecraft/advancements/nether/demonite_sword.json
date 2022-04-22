@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/demonite_ingot",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:demonite_sword",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Deadly!"
+    },
+    "description": {
+      "text": "Obtain a Demonite Sword"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demonite_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:demonite_sword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "demonite_sword"
+    ]
+  ]
+}

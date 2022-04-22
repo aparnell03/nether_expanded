@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/bronze_sword",
+    "display": {
+        "title": {
+            "text": "Yeah! Now Bleed!"
+        },
+        "description": {
+            "text": "Smith a Crimsonite Sword from a Bronze Sword"
+        },
+        "icon": {
+            "item": "nether_expanded:crimsonite_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "nether_expanded:crimsonite_sword"
+                        ]
+                    }
+                ]
+			}
+        }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ]
+}

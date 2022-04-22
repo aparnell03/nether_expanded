@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:steel_ingot"
+  }
+}

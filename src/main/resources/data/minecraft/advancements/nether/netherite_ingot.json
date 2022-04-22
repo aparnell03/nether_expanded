@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/crimsonite",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "title": {
+      "text": "Tougher Than Nails"
+    },
+    "description": {
+      "text": "Craft a Netherite Ingot with Netherite Scrap and Crimsonite Ingots"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_ingot"
+    ]
+  ]
+}

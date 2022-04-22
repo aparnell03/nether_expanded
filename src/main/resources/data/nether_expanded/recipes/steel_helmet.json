@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:iron_helmet"
+    },
+    "addition": {
+        "item": "nether_expanded:steel_ingot"
+    },
+    "result": {
+        "item": "nether_expanded:steel_helmet"
+    }
+}

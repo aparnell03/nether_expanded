@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "nether_expanded:block/polished_bloodstone"
+  }
+}

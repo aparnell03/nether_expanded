@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:nether/smelt_iron",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.obtain_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chainmail_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_helmet"
+            ]
+          }
+        ]
+      }
+    },
+    "chainmail_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_chestplate"
+            ]
+          }
+        ]
+      }
+    },
+    "chainmail_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_leggings"
+            ]
+          }
+        ]
+      }
+    },
+    "chainmail_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chainmail_helmet",
+      "chainmail_chestplate",
+      "chainmail_leggings",
+      "chainmail_boots"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "type": "nether_expanded:forge",
+    "ingredients": [
+        {
+            "item": "minecraft:netherite_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "output": {
+        "item": "nether_expanded:gilded_netherite_ingot"
+    }
+}

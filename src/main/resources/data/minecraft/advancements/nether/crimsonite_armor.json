@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:nether/bronze_armor",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:encrusted_crimsonite_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Armor for Devils"
+    },
+    "description": {
+      "text": "Smith Bronze Armor into Crimsonite Armor, and then smith Diamonds into it!"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:encrusted_crimsonite_helmet"
+            ]
+          }
+        ]
+      }
+    },
+    "chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:encrusted_crimsonite_chestplate"
+            ]
+          }
+        ]
+      }
+    },
+    "leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:encrusted_crimsonite_leggings"
+            ]
+          }
+        ]
+      }
+    },
+    "boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:encrusted_crimsonite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "helmet",
+      "chestplate",
+      "leggings",
+      "boots"
+    ]
+  ]
+}

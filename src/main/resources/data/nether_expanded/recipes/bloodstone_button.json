@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nether_expanded:polished_bloodstone"
+        }
+    ],
+    "result": {
+        "item": "nether_expanded:bloodstone_button",
+        "count": 1
+    }
+}

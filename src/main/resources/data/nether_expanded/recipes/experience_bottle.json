@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " X ",
+        " # ",
+        " B "
+    ],
+    "key": {
+        "X": {
+            "item": "nether_expanded:mystical_powder"
+        },
+        "#": {
+            "item": "nether_expanded:soul_dust"
+        },
+        "B": {
+            "item": "minecraft:glass_bottle"
+        }
+    },
+    "result": {
+        "item": "minecraft:experience_bottle",
+        "count": 1
+    }
+}

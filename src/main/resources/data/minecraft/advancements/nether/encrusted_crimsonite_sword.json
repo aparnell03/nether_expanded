@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/crimsonite_sword",
+    "display": {
+        "title": {
+            "text": "DIE! DIE!"
+        },
+        "description": {
+            "text": "Forge an Emblazoned Crimsonite Sword with a Gem Sword and a Crimsonite Sword"
+        },
+        "icon": {
+            "item": "nether_expanded:encrusted_crimsonite_sword"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "nether_expanded:encrusted_crimsonite_sword"
+                        ]
+                    }
+                ]
+			}
+        }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ]
+}

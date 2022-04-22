@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/netherite_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:demonite_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "The Ultimate Pickaxe"
+    },
+    "description": {
+      "text": "Upgrade your pickaxe for the final time"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demonite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:demonite_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "demonite_pickaxe"
+    ]
+  ]
+}

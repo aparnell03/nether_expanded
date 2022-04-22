@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/encrusted_sword",
+    "display": {
+        "title": {
+            "text": "All The Bronze Things"
+        },
+        "description": {
+            "text": "Craft all the Emblazoned Swords together!"
+        },
+        "icon": {
+            "item": "nether_expanded:gem_sword"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "nether_expanded:gem_sword"
+                        ]
+                    }
+                ]
+			}
+        }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ]
+}

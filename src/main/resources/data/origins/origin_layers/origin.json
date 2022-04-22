@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "origins": [
+    "banished:banished",
+    "banished:zombified_piglin",
+    "banished:wither_skeleton"
+
+  ]
+}

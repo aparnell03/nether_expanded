@@ -1,0 +1,8 @@
+{
+"variants": {
+"facing=north": { "model": "nether_expanded:block/forge" },
+"facing=east": { "model": "nether_expanded:block/forge", "y": 90 },
+"facing=south": { "model": "nether_expanded:block/forge", "y": 180 },
+"facing=west": { "model": "nether_expanded:block/forge", "y": 270 }
+  }
+}

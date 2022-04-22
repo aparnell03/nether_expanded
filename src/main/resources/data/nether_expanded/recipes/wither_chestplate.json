@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:demonite_chestplate"
+    },
+    {
+      "item": "nether_expanded:encrusted_crimsonite_chestplate"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:wither_chestplate"
+  }
+}

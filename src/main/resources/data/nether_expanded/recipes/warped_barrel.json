@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#":
+    {
+      "item": "minecraft:warped_planks"
+    }
+
+  },
+  "result": {
+    "item": "nether_expanded:warped_barrel"
+  }
+}

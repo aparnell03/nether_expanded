@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/forge",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:ruby_staff",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Fireball!"
+    },
+    "description": {
+      "text": "Obtain a Ruby Staff"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:ruby_staff"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "staff"
+    ]
+  ]
+}

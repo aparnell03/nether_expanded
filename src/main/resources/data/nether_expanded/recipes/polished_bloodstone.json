@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "nether_expanded:bloodstone"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:polished_bloodstone",
+    "count": 4
+  }
+}

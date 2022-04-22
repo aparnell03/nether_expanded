@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mem",
+    "bdb",
+    "gcg"
+  ],
+  "key": {
+    "d":
+    {
+      "item": "minecraft:ancient_debris"
+    },
+    "b":
+    {
+      "item": "nether_expanded:bleeding_obsidian"
+    },
+    "g":
+    {
+      "item": "minecraft:gilded_blackstone"
+    },
+    "c":
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    "e":
+    {
+      "item": "nether_expanded:nether_diamond_ore"
+    },
+    "m":
+    {
+      "item": "nether_expanded:mystical_powder"
+    }
+  },
+  "result": {
+    "item": "minecraft:end_stone"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "nether_expanded:soul_dust"
+        },
+        {
+            "item": "minecraft:redstone"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gunpowder",
+        "count": 2
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/iron_tools",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:steel_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Even Better Pickaxe"
+    },
+    "description": {
+      "text": "Upgrade your pickaxe again"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "steel_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:steel_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "steel_pickaxe"
+    ]
+  ]
+}

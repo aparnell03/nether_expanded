@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nether_expanded:wither_bone"
+        }
+    ],
+    "result": {
+        "item": "minecraft:coal",
+        "count": 2
+    }
+}

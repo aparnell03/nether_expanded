@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "nether_expanded:bloodstone"
+  },
+  "result": "nether_expanded:bloodstone_brick_slab",
+  "count": 2
+}

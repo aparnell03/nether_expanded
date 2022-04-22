@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "nether_expanded:polished_bloodstone"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:bloodstone_pressure_plate",
+    "count": 4
+  }
+}

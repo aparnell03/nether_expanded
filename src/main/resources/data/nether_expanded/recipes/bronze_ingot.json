@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:copper_ingot"
+  },
+  "addition": {
+    "item": "nether_expanded:pig_iron"
+  },
+  "result": {
+    "item": "nether_expanded:bronze_ingot"
+  }
+}

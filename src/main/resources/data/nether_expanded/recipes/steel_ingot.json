@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "nether_expanded:steel_scrap"
+    },
+    "addition": {
+        "item": "nether_expanded:steel_scrap"
+    },
+    "result": {
+        "item": "nether_expanded:steel_ingot"
+    }
+}

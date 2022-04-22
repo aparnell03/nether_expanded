@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chiseled_nether_bricks"
+    },
+    "X": {
+      "item": "nether_expanded:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:fortress_compass"
+  }
+}

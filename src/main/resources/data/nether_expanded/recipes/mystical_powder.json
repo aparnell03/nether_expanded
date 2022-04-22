@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:gunpowder"
+        },
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "minecraft:lapis_lazuli"
+        },
+        {
+            "item": "nether_expanded:quartz_crystal"
+        }
+    ],
+    "result": {
+        "item": "nether_expanded:mystical_powder",
+        "count": 2
+    }
+}

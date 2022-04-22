@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_player_spawn",
+  "dimension": "minecraft:the_nether",
+  "biome": "minecraft:nether_wastes",
+  "structure": "fortress",
+  "spawn_strategy": "center",
+  "name": "Damned",
+  "description": "Your natural spawn will be in a Nether Fortress."
+}

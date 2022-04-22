@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#B#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_nugget"
+        },
+        "B": {
+            "item": "nether_expanded:bloodroot"
+        }
+    },
+    "result": {
+        "item": "nether_expanded:golden_bloodroot",
+        "count": 1
+    }
+}

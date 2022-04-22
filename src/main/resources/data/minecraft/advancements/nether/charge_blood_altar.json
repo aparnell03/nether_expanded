@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:nether/obtain_bleeding_obsidian",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:blood_altar"
+    },
+    "title": {
+      "text": "12 Broken Souls"
+    },
+    "description": {
+      "text": "Charge a Blood Altar to the maximum"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "charge_blood_altar": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "blocks": [
+              "nether_expanded:blood_altar"
+            ],
+            "state": {
+              "charges": "12"
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "nether_expanded:soul_fragment"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "charge_blood_altar"
+    ]
+  ]
+}

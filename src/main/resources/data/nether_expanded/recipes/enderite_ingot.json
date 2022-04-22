@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:enderite_sheet"
+    },
+    {
+      "item": "nether_expanded:enderite_sheet"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:enderite_ingot"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "nether_expanded:crimsonite_ingot"
+    },
+    "X": {
+      "item": "nether_expanded:enchanted_ruby"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:ruby_staff"
+  }
+}

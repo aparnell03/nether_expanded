@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "nether_expanded:bloodstone_wall",
+    "nether_expanded:bloodstone_brick_wall",
+    "nether_expanded:polished_bloodstone_wall"
+
+  ]
+}

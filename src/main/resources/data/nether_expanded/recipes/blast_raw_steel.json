@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "nether_expanded:raw_steel"
+    },
+    "result": "nether_expanded:steel_scrap",
+    "experience": 10,
+    "cookingtime": 200
+}

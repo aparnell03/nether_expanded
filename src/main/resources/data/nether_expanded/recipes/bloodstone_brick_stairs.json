@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nether_expanded:bloodstone_bricks"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:bloodstone_brick_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/bronze",
+    "display": {
+        "title": {
+            "text": "The Base of Magic Swords"
+        },
+        "description": {
+            "text": "Craft a Bronze Sword"
+        },
+        "icon": {
+            "item": "nether_expanded:bronze_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "getItem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "nether_expanded:bronze_sword"
+                        ]
+                    }
+                ]
+			}
+        }
+    },
+    "requirements": [
+      [
+        "getItem"
+      ]
+    ]
+}

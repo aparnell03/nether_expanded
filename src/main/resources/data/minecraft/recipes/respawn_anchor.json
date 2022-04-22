@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#":
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    "X":
+    {
+      "item": "minecraft:glowstone"
+    }
+
+  },
+  "result": {
+    "item": "minecraft:respawn_anchor"
+  }
+}

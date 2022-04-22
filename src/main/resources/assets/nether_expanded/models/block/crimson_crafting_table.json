@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "nether_expanded:block/crimson_crafting_table_front",
+    "north": "nether_expanded:block/crimson_crafting_table_front",
+    "south": "nether_expanded:block/crimson_crafting_table_side",
+    "east": "nether_expanded:block/crimson_crafting_table_side",
+    "west": "nether_expanded:block/crimson_crafting_table_front",
+    "up": "nether_expanded:block/crimson_crafting_table_top",
+    "down": "minecraft:block/crimson_planks"
+  }
+}

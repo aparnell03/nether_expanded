@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#":
+    {
+      "item": "minecraft:blackstone"
+    }
+
+  },
+  "result": {
+    "item": "nether_expanded:blackstone_furnace"
+  }
+}

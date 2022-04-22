@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nnn",
+    "nec",
+    "ccc"
+  ],
+  "key": {
+    "n":
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    "c":
+    {
+      "item": "nether_expanded:crimsonite_scrap"
+    },"e":
+    {
+      "item": "nether_expanded:ender_essence"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:enderite_sheet"
+  }
+}

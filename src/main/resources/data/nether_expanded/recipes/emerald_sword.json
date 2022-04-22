@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:bronze_sword"
+    },
+    {
+      "item": "nether_expanded:enchanted_emerald"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:emerald_sword"
+  }
+}

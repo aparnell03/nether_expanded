@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/smith",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:steel_ingot",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "A Harder Metal."
+    },
+    "description": {
+      "text": "Obtain a Steel Ingot by combining an Iron Ingot with Coal"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "steel_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:steel_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "steel_ingot"
+    ]
+  ]
+}

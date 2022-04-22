@@ -1,0 +1,31 @@
+{
+    "parent": "minecraft:nether/steel",
+    "display": {
+        "title": {
+            "text": "For the Good Stuff"
+        },
+        "description": {
+            "text": "Place a Forge"
+        },
+        "icon": {
+            "item": "nether_expanded:forge"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "forge": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "nether_expanded:forge"
+			}
+        }
+    },
+    "requirements": [
+      [
+        "forge"
+      ]
+    ]
+}

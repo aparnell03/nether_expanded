@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "nether_expanded:raw_crimsonite"
+    },
+    "result": "nether_expanded:crimsonite_ingot",
+    "experience": 10,
+    "cookingtime": 200
+}

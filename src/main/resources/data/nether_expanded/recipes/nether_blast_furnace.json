@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "X": {
+      "item": "nether_expanded:blackstone_furnace"
+    },
+    "I": {
+      "item": "nether_expanded:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:nether_blast_furnace"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "nether_expanded:bronze_ingot"
+    },
+    "X": {
+      "item": "nether_expanded:enchanted_amethyst"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:amethyst_staff"
+  }
+}

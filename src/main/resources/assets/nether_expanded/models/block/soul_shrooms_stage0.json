@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "nether_expanded:block/soul_shrooms_stage0"
+  }
+}

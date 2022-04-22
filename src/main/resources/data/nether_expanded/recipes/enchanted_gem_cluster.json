@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nether_expanded:enchanted_quartz"
+        },
+        {
+            "item": "nether_expanded:enchanted_ruby"
+        },
+        {
+            "item": "nether_expanded:enchanted_diamond"
+        },
+        {
+            "item": "nether_expanded:enchanted_amethyst"
+        },
+        {
+            "item": "nether_expanded:enchanted_emerald"
+        }
+    ],
+    "result": {
+        "item": "nether_expanded:enchanted_gem_cluster",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "nether_expanded:mystical_powder"
+    }
+  ],
+  "result": {
+    "item": "minecraft:fermented_spider_eye"
+  }
+}

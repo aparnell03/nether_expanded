@@ -1,0 +1,68 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Bannished"
+        },
+        "description": {
+            "text": "Begin the challenge. Check the recipe book for crafting and smelting."
+        },
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+    },
+    "criteria": {
+        "start": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "overworld",
+                "to": "the_nether"
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "nether_expanded:crimson_stew",
+            "nether_expanded:smelt_quartz",
+            "nether_expanded:smelt_soulsand",
+            "nether_expanded:blast_gilded",
+            "nether_expanded:blast_quartz",
+            "nether_expanded:forge",
+            "nether_expanded:nether_blast_furnace",
+            "nether_expanded:blood_altar",
+            "nether_expanded:bleeding_obsidian",
+            "nether_expanded:golden_bloodroot",
+            "nether_expanded:mystical_powder",
+			"nether_expanded:raw_crimsonite",
+			"nether_expanded:crimson_heart",
+            "nether_expanded:golden_heart",
+            "nether_expanded:warped_stew",
+            "nether_expanded:blackstone_sword",
+            "nether_expanded:blackstone_pickaxe",
+            "nether_expanded:blackstone_axe",
+            "nether_expanded:blackstone_shovel",
+            "nether_expanded:blackstone_hoe",
+            "nether_expanded:bronze_sword",
+            "nether_expanded:bronze_pickaxe",
+            "nether_expanded:bronze_axe",
+            "nether_expanded:bronze_shovel",
+            "nether_expanded:bronze_hoe",
+            "nether_expanded:bronze_helmet",
+            "nether_expanded:bronze_chestplate",
+            "nether_expanded:bronze_leggings",
+            "nether_expanded:bronze_boots",
+            "nether_expanded:fortress_compass",
+            "nether_expanded:smelt_pig_iron",
+			"nether_expanded:fermented_spider_eye",
+            "nether_expanded:wither_bone",
+            "nether_expanded:crying_obsidian",
+            "nether_expanded:bleeding_obsidian",
+            "nether_expanded:totem_of_skeletonization"
+        ]
+    }
+}

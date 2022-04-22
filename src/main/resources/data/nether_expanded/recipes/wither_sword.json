@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:demonite_sword"
+    },
+    {
+      "item": "nether_expanded:encrusted_crimsonite_sword"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:wither_sword"
+  }
+}

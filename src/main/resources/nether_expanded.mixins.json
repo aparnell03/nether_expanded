@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.austin.nether_expanded.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractPiglinEntityMixin",
+    "ArmorItemMixin",
+    "BlazeEntityMixin",
+    "BrewingRecipeRegistryMixin",
+    "CraftingScreenHandlerMixin",
+    "ExplosiveProjectileEntityMixin",
+    "GhastEntityMixin",
+    "PersistentProjectileEntityMixin",
+    "PiglinBrainMixin",
+    "PiglinEntityMixin",
+    "PiglinSpecificSensorMixin",
+    "SkeletonEntityMixin",
+    "WitherSkeletonEntityMixin"
+  ],
+  "client": [
+    "NetherMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

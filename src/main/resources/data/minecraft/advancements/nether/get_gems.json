@@ -1,0 +1,79 @@
+{
+  "parent": "minecraft:nether/explore_nether",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:ruby"
+    },
+    "title": {
+      "text": "Obtain all the gems!"
+    },
+    "description": {
+      "text": "Collect Quartz, Amethyst, Emerald, Ruby, and Diamond"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_ruby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "nether_expanded:ruby"
+          }
+        ]
+      }
+    },
+    "get_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:emerald"
+          }
+        ]
+      }
+    },
+    "get_amethyst": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:amethyst_shard"
+          }
+        ]
+      }
+    },
+    "get_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "nether_expanded:quartz_crystal"
+          }
+        ]
+      }
+    },
+    "get_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:diamond"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_ruby",
+      "get_emerald",
+      "get_diamond",
+      "get_amethyst",
+      "get_quartz"
+    ]
+  ]
+}

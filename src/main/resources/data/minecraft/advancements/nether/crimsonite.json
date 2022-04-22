@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/smith",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:crimsonite_ingot"
+    },
+    "title": {
+      "text": "Path to Netherite"
+    },
+    "description": {
+      "text": "Craft and smelt a Crimsonite Ingot from Crimsonite Scrap and Bronze Ingots"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "copper_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:crimsonite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "copper_ingot"
+    ]
+  ]
+}

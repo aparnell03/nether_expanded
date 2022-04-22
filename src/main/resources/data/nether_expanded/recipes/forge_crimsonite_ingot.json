@@ -1,0 +1,14 @@
+{
+  "type": "nether_expanded:forge",
+  "ingredients": [
+    {
+      "item": "nether_expanded:crimsonite_scrap"
+    },
+    {
+      "item": "nether_expanded:mystical_powder"
+    }
+  ],
+  "output": {
+    "item": "nether_expanded:raw_crimsonite"
+  }
+}

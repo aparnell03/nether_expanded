@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "nether_expanded:blood_altar",
+    "nether_expanded:bleeding_obsidian",
+    "nether_expanded:steel_block"
+  ]
+}

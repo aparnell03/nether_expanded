@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nether_expanded:block/polished_bloodstone_slab"
+    },
+    "type=double": {
+      "model": "nether_expanded:block/polished_bloodstone"
+    },
+    "type=top": {
+      "model": "nether_expanded:block/polished_bloodstone_slab_top"
+    }
+  }
+}

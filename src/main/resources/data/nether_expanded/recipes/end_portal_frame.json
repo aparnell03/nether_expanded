@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "iii",
+    "iei"
+  ],
+  "key": {
+    "s":
+    {
+      "item": "nether_expanded:soul"
+    },
+    "e":
+    {
+      "item": "minecraft:end_stone"
+    },
+    "i":
+    {
+      "item": "nether_expanded:enderite_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:end_portal_frame"
+  }
+}

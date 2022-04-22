@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all":"nether_expanded:block/crimsonite_ore"
+  }
+}

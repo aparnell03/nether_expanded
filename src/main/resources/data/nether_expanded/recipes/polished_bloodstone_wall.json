@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nether_expanded:polished_bloodstone"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:polished_bloodstone_wall",
+    "count": 6
+  }
+}

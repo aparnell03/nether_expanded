@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:nether_wart_block"
+    },
+    "result": "nether_expanded:crimson_heart",
+    "experience": 0.0,
+    "cookingtime": 800
+}

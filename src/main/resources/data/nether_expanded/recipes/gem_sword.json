@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "nether_expanded:quartz_sword"
+        },
+        {
+            "item": "nether_expanded:amethyst_sword"
+        },
+        {
+            "item": "nether_expanded:emerald_sword"
+        },
+        {
+            "item": "nether_expanded:ruby_sword"
+        },
+        {
+            "item": "nether_expanded:encrusted_sword"
+        }
+    ],
+    "result": {
+        "item": "nether_expanded:gem_sword",
+        "count": 1
+    }
+}

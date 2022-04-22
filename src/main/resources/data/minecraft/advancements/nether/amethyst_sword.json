@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/bronze_sword",
+    "display": {
+        "title": {
+            "text": "floatin"
+        },
+        "description": {
+            "text": "Using an enchanted gem, Forge an Amethyst Sword"
+        },
+        "icon": {
+            "item": "nether_expanded:amethyst_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "nether_expanded:amethyst_sword"
+                        ]
+                    }
+                ]
+			}
+        }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ]
+}

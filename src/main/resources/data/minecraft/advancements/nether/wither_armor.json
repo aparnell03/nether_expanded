@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:nether/crimsonite_armor",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:wither_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Armor for Gods"
+    },
+    "description": {
+      "text": "Wither armor ends lives."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_helmet"
+            ]
+          }
+        ]
+      }
+    },
+    "chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_chestplate"
+            ]
+          }
+        ]
+      }
+    },
+    "leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_leggings"
+            ]
+          }
+        ]
+      }
+    },
+    "boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "helmet",
+      "chestplate",
+      "leggings",
+      "boots"
+    ]
+  ]
+}

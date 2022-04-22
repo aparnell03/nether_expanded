@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether_expanded:fire_essence"
+    },
+    {
+      "item": "nether_expanded:ender_essence"
+    },
+    {
+      "item": "nether_expanded:viral_essence"
+    },
+    {
+      "item": "nether_expanded:blight"
+    }
+  ],
+  "result": {
+    "item": "nether_expanded:transfiguration_essence"
+  }
+}

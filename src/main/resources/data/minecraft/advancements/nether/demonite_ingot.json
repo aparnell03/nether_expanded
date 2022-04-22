@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:nether/netherite_ingot",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:demonite_ingot"
+    },
+    "title": {
+      "text": "Tougher Than Anything"
+    },
+    "description": {
+      "text": "Forge a Demonite Ingot with a Netherite Ingot and Mystical Powder"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demonite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:demonite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "demonite_ingot"
+    ]
+  ]
+}
