@@ -81,7 +81,7 @@ public class ModItems {
 
     public static final Item FORTRESS_COMPASS = registerItem("fortress_compass",new FortressCompassItem(new FabricItemSettings().maxCount(1).group(ItemGroup.TOOLS)));
 
-    public static final Item TINTED_GLASS_BOTTLE = registerItem("tinted_glass_bottle",new TintedGlassBottleItem(new FabricItemSettings().maxCount(1).group(ItemGroup.MISC)));
+    public static final Item TINTED_GLASS_BOTTLE = registerItem("tinted_glass_bottle",new TintedGlassBottleItem(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item LAVA_BOTTLE = registerItem("lava_bottle",new Item(new FabricItemSettings().maxCount(1).group(ItemGroup.MISC)));
 
     public static final Item QUARTZ_STAFF = registerItem("quartz_staff", new QuartzStaffItem(new FabricItemSettings().maxCount(1).maxDamage(1000).group(ItemGroup.COMBAT)));
