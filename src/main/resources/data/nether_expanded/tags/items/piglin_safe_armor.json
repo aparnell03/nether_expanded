@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_helmet",
+    "minecraft:golden_chestplate",
+    "minecraft:golden_leggings",
+    "minecraft:golden_boots",
+    "nether_expanded:gilded_netherite_helmet",
+    "nether_expanded:gilded_netherite_chestplate",
+    "nether_expanded:gilded_netherite_leggings",
+    "nether_expanded:gilded_netherite_boots"
+  ]
+}
