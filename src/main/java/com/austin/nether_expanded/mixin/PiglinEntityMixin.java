@@ -59,7 +59,7 @@ public abstract class PiglinEntityMixin extends AbstractPiglinEntity{
             return new ItemStack(ModItems.GILDED_NETHERITE_SWORD);
         }
         if (isHeretic()){
-            return new ItemStack(ModItems.GILDED_NETHERITE_SWORD);
+            return new ItemStack(ModItems.WITHER_SWORD);
         }
         if ((double)this.random.nextFloat() < 0.5) {
             return new ItemStack(Items.CROSSBOW);
