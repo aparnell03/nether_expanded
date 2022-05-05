@@ -1,10 +1,7 @@
 package com.austin.nether_expanded.effect.effects;
 
-import com.austin.nether_expanded.effect.ModStatusEffects;
-import com.eliotlash.mclib.math.functions.rounding.Round;
-import net.minecraft.advancement.criterion.Criteria;
+
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
@@ -12,8 +9,6 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.math.BlockPos;
 
 public class XPStatusEffect extends StatusEffect {
 

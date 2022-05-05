@@ -43,6 +43,7 @@ public class ModItems {
     public static final Item GEM_CLUSTER = registerItem("gem_cluster",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item ENCHANTED_GEM_CLUSTER = registerItem("enchanted_gem_cluster",new ShinyItem(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item WITHER_BONE = registerItem("wither_bone",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item BLOOD_ZOMBIE_SPAWN_EGG = registerItem("blood_zombie_spawn_egg",new SpawnEggItem(NetherExpanded.BLOOD_ZOMBIE, 0, 0, new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item WITHER_POWDER = registerItem("wither_powder",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
     public static final Item SOUL_DUST = registerItem("soul_dust",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
