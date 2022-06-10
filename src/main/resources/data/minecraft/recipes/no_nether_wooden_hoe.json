@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "XX",
-    "X#",
+    " #",
     " #"
   ],
   "key": {
@@ -10,15 +10,15 @@
       "item": "minecraft:stick"
     },
     "X": [
-    {
-      "item": "minecraft:cobblestone"
-    },
-    {
-      "item": "minecraft:cobbled_deepslate"
-    }
-      ]
+      {
+        "item": "minecraft:crimson_planks"
+      },
+      {
+        "item": "minecraft:warped_planks"
+      }
+    ]
   },
   "result": {
-    "item": "minecraft:stone_axe"
+    "item": "minecraft:air"
   }
 }

@@ -9,16 +9,11 @@
     "#": {
       "item": "minecraft:stick"
     },
-    "X": [
-      {
-        "item": "minecraft:cobblestone"
-      },
-      {
-        "item": "minecraft:cobbled_deepslate"
-      }
-    ]
+    "X": {
+      "item": "minecraft:blackstone"
+    }
   },
   "result": {
-    "item": "minecraft:stone_sword"
+    "item": "minecraft:air"
   }
 }
