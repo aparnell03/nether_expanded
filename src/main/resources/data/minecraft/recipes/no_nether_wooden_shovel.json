@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XX",
-    " #",
-    " #"
+    "X",
+    "#",
+    "#"
   ],
   "key": {
     "#": {
@@ -11,14 +11,14 @@
     },
     "X": [
       {
-        "item": "minecraft:cobblestone"
+        "item": "minecraft:crimson_planks"
       },
       {
-        "item": "minecraft:cobbled_deepslate"
+        "item": "minecraft:warped_planks"
       }
     ]
   },
   "result": {
-    "item": "minecraft:stone_hoe"
+    "item": "minecraft:air"
   }
 }

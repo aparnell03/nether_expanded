@@ -8,14 +8,11 @@
   "key": {
     "#": [
     {
-      "item": "minecraft:cobblestone"
-    },
-    {
-      "item": "minecraft:cobbled_deepslate"
+      "item": "minecraft:blackstone"
     }
     ]
   },
   "result": {
-    "item": "minecraft:furnace"
+    "item": "minecraft:air"
   }
 }
