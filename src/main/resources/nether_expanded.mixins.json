@@ -19,6 +19,7 @@
     "WitherSkeletonEntityMixin"
   ],
   "client": [
+    "MinecraftClientMixin",
     "NetherMixin"
   ],
   "injectors": {

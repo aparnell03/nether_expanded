@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "nether_expanded:quartz_staff",
+    "nether_expanded:amethyst_staff",
+    "nether_expanded:emerald_staff",
+    "nether_expanded:ruby_staff",
+    "nether_expanded:diamond_staff"
+  ]
+}

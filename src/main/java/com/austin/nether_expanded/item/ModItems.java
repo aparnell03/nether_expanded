@@ -82,6 +82,8 @@ public class ModItems {
 
     public static final Item FORTRESS_COMPASS = registerItem("fortress_compass",new FortressCompassItem(new FabricItemSettings().maxCount(1).group(ItemGroup.TOOLS)));
 
+    public static final Item SOUL_GLASS_SHARD = registerItem("soul_glass_shard",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
     public static final Item TINTED_GLASS_BOTTLE = registerItem("tinted_glass_bottle",new TintedGlassBottleItem(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item LAVA_BOTTLE = registerItem("lava_bottle",new Item(new FabricItemSettings().maxCount(1).group(ItemGroup.MISC)));
 
@@ -91,37 +93,7 @@ public class ModItems {
     public static final Item RUBY_STAFF = registerItem("ruby_staff", new RubyStaffItem(new FabricItemSettings().maxCount(1).maxDamage(150).group(ItemGroup.COMBAT)));
     public static final Item DIAMOND_STAFF = registerItem("diamond_staff", new DiamondStaffItem(new FabricItemSettings().maxCount(1).maxDamage(100).group(ItemGroup.COMBAT)));
 
-    public static final Item CRIMSON_SWORD = registerItem("crimson_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4f,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
-    public static final Item CRIMSON_SHOVEL = registerItem("crimson_shovel",
-            new ShovelItem(ToolMaterials.WOOD, 1.5f, -3.0f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item CRIMSON_PICKAXE = registerItem("crimson_pickaxe",
-            new ModPickaxeItem(ToolMaterials.WOOD, 1, -2.8f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item CRIMSON_AXE = registerItem("crimson_axe",
-            new ModAxeItem(ToolMaterials.WOOD, 6, -3.2f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item CRIMSON_HOE = registerItem("crimson_hoe",
-            new ModHoeItem(ToolMaterials.WOOD, 1, -3.0f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
 
-    public static final Item WARPED_SWORD = registerItem("warped_sword",
-            new SwordItem(ToolMaterials.WOOD, 2, -2.2f,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
-    public static final Item WARPED_SHOVEL = registerItem("warped_shovel",
-            new ShovelItem(ToolMaterials.WOOD, 1f, -2.8f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item WARPED_PICKAXE = registerItem("warped_pickaxe",
-            new ModPickaxeItem(ToolMaterials.WOOD, 1, -2.6f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item WARPED_AXE = registerItem("warped_axe",
-            new ModAxeItem(ToolMaterials.WOOD, 5.5f, -3.0f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item WARPED_HOE = registerItem("warped_hoe",
-            new ModHoeItem(ToolMaterials.WOOD, 1, -3.0f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
 
     public static final Item BLACKSTONE_SWORD = registerItem("blackstone_sword",
             new SwordItem(ModToolMaterial.BLACKSTONE, 3, -2.8f,

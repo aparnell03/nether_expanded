@@ -2,8 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:mushroom_stew",
-	"nether_expanded:crimson_stew",
-	"nether_expanded:warped_stew",
+    { "id": "nether_expanded:crimson_stew", "required": false },
+    { "id": "nether_expanded:warped_stew", "required": false },
+    { "id": "nether_expanded:soul_shrooms", "required": false },
     {"id": "biomemakeover:glowshroom_stew", "required": false},
     {"id": "enhanced_mushrooms:roasted_mushrooms", "required": false}
   ]

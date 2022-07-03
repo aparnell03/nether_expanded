@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+
+    {"id": "adventurez:wither_puppet", "required": false}
+  ]
+}

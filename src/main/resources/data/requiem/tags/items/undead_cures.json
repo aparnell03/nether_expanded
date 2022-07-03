@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:golden_apple",
-    "nether_expanded:golden_heart"
+    { "id": "nether_expanded:golden_heart", "required": false }
   ]
 }

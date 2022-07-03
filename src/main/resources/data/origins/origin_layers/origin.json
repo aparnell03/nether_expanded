@@ -1,9 +1,17 @@
 {
   "replace": false,
+  "order": 0,
+  "enabled": true,
   "origins": [
-    "banished:banished",
-    "banished:zombified_piglin",
-    "banished:wither_skeleton"
+    "nether_expanded:banished",
+    "nether_expanded:zombified_piglin",
+    "nether_expanded:wither_skeleton"
+  ],
+  "allow_random": true,
+  "exclude_random": [
+    "nether_expanded:banished"
 
-  ]
+  ],
+  "allow_random_unchoosable": false,
+  "hidden": false
 }

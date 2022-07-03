@@ -1,22 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#A#",
-    "###"
+    "# #",
+    " # "
   ],
   "key": {
     "#":
     {
-      "item": "minecraft:glass_bottle"
-    },
-    "A":
-    {
-      "item": "minecraft:amethyst_shard"
+      "item": "nether_expanded:soul_glass_shard"
     }
   },
   "result": {
     "item": "nether_expanded:tinted_glass_bottle",
-    "count": 9
+    "count": 1
   }
 }

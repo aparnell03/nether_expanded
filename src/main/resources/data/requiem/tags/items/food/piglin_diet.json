@@ -2,7 +2,10 @@
   "replace": false,
   "values": [
     "#requiem:pork",
-    "#requiem:food/golden"
-	"#requiem:food/nether_diet"
+    "#requiem:food/golden",
+    { "id": "nether_expanded:crimson_heart", "required": false },
+    { "id": "nether_expanded:blood_root", "required": false },
+    { "id": "nether_expanded:crimson_stew", "required": false }
+
   ]
 }

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-	"minecraft:bone",
-	"nether_expanded:wither_bone"
+    "minecraft:bone",
+    "nether_expanded:wither_bone"
   ]
 }

@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"nether_expanded:crimson_spawn"
+	],
+	"icon": "nether_expanded:flesh_block",
+	"order": 0,
+	"impact": 3,
+	"name": "Banished",
+	"description": "Spawn in the Nether"
+}

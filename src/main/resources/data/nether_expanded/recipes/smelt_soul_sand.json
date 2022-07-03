@@ -3,7 +3,7 @@
     "ingredient": {
         "item": "minecraft:soul_sand"
     },
-    "result": "minecraft:tinted_glass",
+    "result": "nether_expanded:soul_glass_shard",
     "experience": 0.2,
     "cookingtime": 400
 }
