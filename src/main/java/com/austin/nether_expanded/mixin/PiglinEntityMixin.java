@@ -100,7 +100,6 @@ public abstract class PiglinEntityMixin extends AbstractPiglinEntity{
     @Inject(method = "initialize", at = @At("TAIL"))
     public void initializeInjectTail(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, EntityData entityData, NbtCompound entityNbt, CallbackInfoReturnable<EntityData> cir) {
         if (isCommander() || isChieftain() || isHellion() || isWarlord() || isChampion() || isHeretic()){
-            this.convertTo(EntityType.PIGLIN_BRUTE, true);
             if (isHellion() || isWarlord() || isChampion() || isHeretic()) {
                 this.setEquipmentDropChance(EquipmentSlot.HEAD, 0f);
                 this.setEquipmentDropChance(EquipmentSlot.CHEST, 0f);

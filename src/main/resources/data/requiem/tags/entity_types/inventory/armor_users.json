@@ -4,8 +4,7 @@
     "#requiem:humanoid_zombies",
     "#requiem:humanoid_skeletons",
     "#requiem:piglins",
-    "minecraft:piglin_brute",
-    "requiem:cured_piglin_brute",
+
     "minecraft:villager",
     "minecraft:pillager",
     {"id": "mobz:dwarf_entity", "required": false},
