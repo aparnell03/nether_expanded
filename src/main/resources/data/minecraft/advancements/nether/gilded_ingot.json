@@ -1,0 +1,154 @@
+{
+  "parent": "minecraft:nether/netherite_ingot",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:gilded_netherite_ingot"
+    },
+    "title": {
+      "text": "Cooler Than Anything"
+    },
+    "description": {
+      "text": "Forge together any Netherite Item with a Gold Ingot"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gilded_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "gilded_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:gilded_netherite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gilded_ingot",
+      "gilded_helmet",
+      "gilded_chestplate",
+      "gilded_leggings",
+      "gilded_boots",
+      "gilded_sword",
+      "gilded_pickaxe",
+      "gilded_axe",
+      "gilded_shovel",
+      "gilded_hoe"
+    ]
+  ]
+}

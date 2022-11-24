@@ -29,9 +29,13 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE).hardness(3.75f).resistance(0.4f).requiresTool().sounds(BlockSoundGroup.NETHER_ORE), UniformIntProvider.create(3, 6)), ItemGroup.BUILDING_BLOCKS);
     public static final Block NETHER_LAPIS_ORE = registerBlock("nether_lapis_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).hardness(1.25f).resistance(5.0f).requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE), UniformIntProvider.create(2, 5)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block FERROSTONE = registerBlock("ferrostone",
+            new OreBlock(FabricBlockSettings.of(Material.METAL).hardness(8.5f).resistance(10).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ItemGroup.BUILDING_BLOCKS);
 
     public static final Block BLEEDING_OBSIDIAN = registerBlock("bleeding_obsidian",
             new BleedingObsidianBlock(FabricBlockSettings.of(Material.STONE).hardness(50.0f).resistance(1200.0f).luminance(state -> 8).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+    public static final Block FERMENTED_WARPED_WART_BLOCK = registerBlock("fermented_warped_wart_block",
+            new FermentedWarpedWartBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1.0f).resistance(0).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
 
     public static final Block BRONZE_BLOCK = registerBlock("bronze_block",
             new Block(FabricBlockSettings.of(Material.METAL).hardness(7.5f).resistance(3.5f).requiresTool().sounds(BlockSoundGroup.COPPER)), ItemGroup.BUILDING_BLOCKS);
@@ -48,7 +52,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).hardness(6.5f).resistance(5.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 
     public static final Block FLESH_BLOCK = registerBlock("flesh_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1).resistance(1).requiresTool().sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1).resistance(1).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
 
     public static final Block NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).hardness(4.25f).resistance(8.0f).requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)), ItemGroup.BUILDING_BLOCKS);

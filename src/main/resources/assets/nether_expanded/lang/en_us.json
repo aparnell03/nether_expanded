@@ -39,9 +39,12 @@
   "item.nether_expanded.fire_essence": "Rage Essence",
   "item.nether_expanded.transfiguration_essence": "Pink Goo",
 
+  "item.nether_expanded.elixr": "Elixr",
+
   "item.nether_expanded.soul_glass_shard":"Soul Glass Shard",
   "item.nether_expanded.tinted_glass_bottle": "Tinted Glass Bottle",
   "item.nether_expanded.lava_bottle": "Lava Bottle",
+  "item.nether_expanded.warp_juice_bottle": "Bottle o' Warp Juice",
 
   "item.nether_expanded.soul": "Soul",
   "item.nether_expanded.sand_soul": "Ancient Soul",
@@ -181,7 +184,8 @@
   "item.minecraft.potion.effect.long_glowing": "Potion of Glowing",
   "item.minecraft.potion.effect.health_boost": "Potion of Vitality",
   "item.minecraft.potion.effect.long_health_boost": "Potion of Vitality",
-  "item.minecraft.potion.effect.strong_health_boost": "Potion of Vitality",  "item.minecraft.potion.effect.absorption": "Potion of Absorption",
+  "item.minecraft.potion.effect.strong_health_boost": "Potion of Vitality",
+  "item.minecraft.potion.effect.absorption": "Potion of Absorption",
   "item.minecraft.potion.effect.long_absorption": "Potion of Absorption",
   "item.minecraft.potion.effect.strong_absorption": "Potion of Absorption",
   "item.minecraft.potion.effect.blindness": "Potion of Blindness",
@@ -311,6 +315,7 @@
 
   "block.nether_expanded.soul_stone": "Soul Stone",
   "block.nether_expanded.flesh_block": "Flesh Block",
+  "block.nether_expanded.fermented_warped_wart_block": "Fermented Warped Wart Block",
 
   "block.nether_expanded.bleeding_obsidian": "Bleeding Obsidian",
   "block.nether_expanded.blood_altar": "Blood Altar",
@@ -329,6 +334,7 @@
   "block.nether_expanded.nether_copper_ore": "Nether Copper Ore",
   "block.nether_expanded.nether_emerald_ore": "Nether Emerald Ore",
   "block.nether_expanded.nether_lapis_ore": "Crying Blackstone",
+  "block.nether_expanded.ferrostone": "Ferrostone",
   "block.nether_expanded.nether_diamond_ore": "Encrusted Bloodstone",
   "block.nether_expanded.amethyst_ore": "Nether Amethyst Ore",
   "block.nether_expanded.ruby_ore": "Ruby Ore",

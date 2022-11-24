@@ -1,10 +1,13 @@
 package com.austin.nether_expanded.block.custom;
 
+import com.austin.nether_expanded.block.ModBlocks;
 import com.austin.nether_expanded.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
@@ -102,6 +105,49 @@ public class AltarBlock extends Block {
             ItemEntity item = EntityType.ITEM.create(world);
             item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
             item.setStack(PotionUtil.setPotion(new ItemStack(Items.POTION), Potions.WATER));
+            world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
+            world.spawnEntity(item);
+            if (!player.getAbilities().creativeMode) {
+                itemStack.decrement(1);
+            }
+            return ActionResult.success(world.isClient);
+        }
+        if (itemStack.isOf(Item.fromBlock(ModBlocks.FLESH_BLOCK)) && state.get(CHARGES) > 0) {
+            AltarBlock.uncharge(world, pos, state);
+            Random random = new Random();
+            ItemEntity item = EntityType.ITEM.create(world);
+            item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
+            if(random.nextInt(3) == 0) {
+                item.setStack(new ItemStack(ModItems.ELIXR));
+
+            }else{
+                item.setStack(new ItemStack(Blocks.NETHER_WART_BLOCK));
+            }
+            world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
+            world.spawnEntity(item);
+            if (!player.getAbilities().creativeMode) {
+                itemStack.decrement(1);
+            }
+            return ActionResult.success(world.isClient);
+        }
+        if (itemStack.isOf(Items.NETHER_WART_BLOCK) && state.get(CHARGES) > 0) {
+            AltarBlock.uncharge(world, pos, state);
+            Random random = new Random();
+            ItemEntity item = EntityType.ITEM.create(world);
+            item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
+            player.addExperience(random.nextInt(5));
+            world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
+            world.spawnEntity(item);
+            if (!player.getAbilities().creativeMode) {
+                itemStack.decrement(1);
+            }
+            return ActionResult.success(world.isClient);
+        }
+        if (itemStack.isOf(Items.WARPED_WART_BLOCK) && state.get(CHARGES) > 0) {
+            AltarBlock.uncharge(world, pos, state);
+            ItemEntity item = EntityType.ITEM.create(world);
+            item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
+            item.setStack(new ItemStack(ModBlocks.FERMENTED_WARPED_WART_BLOCK));
             world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
             world.spawnEntity(item);
             if (!player.getAbilities().creativeMode) {
@@ -339,22 +385,25 @@ public class AltarBlock extends Block {
             }
             return ActionResult.success(world.isClient);
         }
-        if (itemStack.isOf(ModItems.CRIMSONITE_SWORD) && state.get(CHARGES) == 12) {
-            for(int i=0;i<2;i++){
-                AltarBlock.uncharge(world, pos, state);
+        if (itemStack.isOf(ModItems.CRIMSONITE_SWORD)){
+            if(state.get(CHARGES) == 12) {
+                world.setBlockState(pos, (BlockState)state.with(CHARGES, 0), Block.NOTIFY_ALL);
+                player.damage(DamageSource.MAGIC, 10);
+                ItemEntity item = EntityType.ITEM.create(world);
+                item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
+                item.setStack(new ItemStack(ModItems.BLOOD_SWORD));
+                world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
+                world.spawnEntity(item);
+                world.playSound(null, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, SoundCategory.BLOCKS, 1.0f, 1.0f);
+                world.playSound(null, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_ENDER_DRAGON_GROWL, SoundCategory.BLOCKS, 1.0f, 1.0f);
+                if (!player.getAbilities().creativeMode) {
+                    itemStack.decrement(1);
+                }
+                return ActionResult.success(world.isClient);
+            } else{
+                player.damage(DamageSource.STARVE,100);
             }
-            ItemEntity item = EntityType.ITEM.create(world);
-            item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
-            item.setStack(new ItemStack(ModItems.BLOOD_SWORD));
-            world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
-            world.spawnEntity(item);
-            world.playSound(null, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, SoundCategory.BLOCKS, 1.0f, 1.0f);
-            if (!player.getAbilities().creativeMode) {
-                itemStack.decrement(1);
-            }
-            return ActionResult.success(world.isClient);
         }
-
         if (state.get(CHARGES) == 0) {
             return ActionResult.PASS;
         }

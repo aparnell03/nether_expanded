@@ -10,8 +10,10 @@ import com.austin.nether_expanded.item.custom.armor.EncrustedCrimsoniteArmorItem
 import com.austin.nether_expanded.item.custom.armor.WitherArmorItem;
 import com.austin.nether_expanded.item.custom.staffs.*;
 import com.austin.nether_expanded.item.custom.swords.*;
+import com.austin.nether_expanded.item.custom.tools.ModAxeItem;
+import com.austin.nether_expanded.item.custom.tools.ModHoeItem;
+import com.austin.nether_expanded.item.custom.tools.ModPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -79,6 +81,8 @@ public class ModItems {
     public static final Item GOLDEN_HEART = registerItem("golden_heart",new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().alwaysEdible().hunger(5).saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 80, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 1), 1.0f).build())));
     public static final Item CRIMSON_STEW = registerItem("crimson_stew",new StewItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1).food(new FoodComponent.Builder().hunger(4).saturationModifier(.2f).build())));
     public static final Item WARPED_STEW = registerItem("warped_stew",new StewItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1).food(new FoodComponent.Builder().hunger(6).saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1.0F).statusEffect(new StatusEffectInstance(ModStatusEffects.TELEPORT, 1, 1), 1.0F).build())));
+    public static final Item WARP_JUICE_BOTTLE = registerItem("warp_juice_bottle", new WarpJuiceBottleItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16).food(new FoodComponent.Builder().alwaysEdible().hunger(4).saturationModifier(0.5f).build())));
+    public static final Item ELIXR = registerItem("elixr",new ElixrItem(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().alwaysEdible().hunger(10).saturationModifier(2.0f).build())));
 
     public static final Item FORTRESS_COMPASS = registerItem("fortress_compass",new FortressCompassItem(new FabricItemSettings().maxCount(1).group(ItemGroup.TOOLS)));
 
@@ -93,7 +97,6 @@ public class ModItems {
     public static final Item RUBY_STAFF = registerItem("ruby_staff", new RubyStaffItem(new FabricItemSettings().maxCount(1).maxDamage(150).group(ItemGroup.COMBAT)));
     public static final Item DIAMOND_STAFF = registerItem("diamond_staff", new DiamondStaffItem(new FabricItemSettings().maxCount(1).maxDamage(100).group(ItemGroup.COMBAT)));
 
-    public static final Item ELIXR = registerItem("elixr",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item BLACKSTONE_SWORD = registerItem("blackstone_sword",
             new SwordItem(ModToolMaterial.BLACKSTONE, 3, -2.8f,

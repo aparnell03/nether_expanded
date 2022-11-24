@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "nether_expanded:bloodroot_crop",
-    "nether_expanded:flesh_block"
+    "nether_expanded:flesh_block",
+    "nether_expanded:fermented_warped_wart_block"
   ]
 }

@@ -2,6 +2,7 @@ package com.austin.nether_expanded.item.custom;
 
 import java.util.List;
 
+import com.austin.nether_expanded.block.ModBlocks;
 import com.austin.nether_expanded.item.ModItems;
 import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.Entity;
@@ -26,8 +27,7 @@ import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class TintedGlassBottleItem
-        extends Item {
+public class TintedGlassBottleItem extends Item {
     public TintedGlassBottleItem(Item.Settings settings) {
         super(settings);
     }
@@ -59,3 +59,10 @@ public class TintedGlassBottleItem
         return ItemUsage.exchangeStack(stack, player, outputStack);
     }
 }
+/**
+   if(world.getBlockState(blockPos).isOf(ModBlocks.FERMENTED_WARPED_FUNGUS)){
+        world.playSound(user, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_BOTTLE_FILL_DRAGONBREATH, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+        world.emitGameEvent((Entity)user, GameEvent.FLUID_PICKUP, blockPos);
+        return TypedActionResult.success(this.fill(itemStack, user, new ItemStack(ModItems.WARP_JUICE_BOTTLE)), world.isClient());
+        }
+ **/

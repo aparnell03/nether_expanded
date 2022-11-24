@@ -9,7 +9,7 @@
       "text": "A Harder Metal."
     },
     "description": {
-      "text": "Obtain a Steel Ingot by combining an Iron Ingot with Coal"
+      "text": "Obtain a Steel Ingot by smithing together an Iron Ingot and Coal, blasting the Raw Steel, and smithing the scraps back together!"
     },
     "frame": "goal",
     "show_toast": true,

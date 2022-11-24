@@ -38,5 +38,16 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_SOUL_STONE.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BASALT_DELTAS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_NETHER_LAPIS.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BASALT_DELTAS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_GILDED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BASALT_DELTAS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ORE_FERROSTONE.getKey().get());
+
+
     }
 }

@@ -1,4 +1,4 @@
-package com.austin.nether_expanded.item.custom;
+package com.austin.nether_expanded.item.custom.tools;
 
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;

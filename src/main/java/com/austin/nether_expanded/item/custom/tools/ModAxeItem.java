@@ -1,4 +1,4 @@
-package com.austin.nether_expanded.item.custom;
+package com.austin.nether_expanded.item.custom.tools;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;

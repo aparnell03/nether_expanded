@@ -67,6 +67,11 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ORE_NETHER_LAPIS = ConfiguredFeatures.register("nether_lapis_ore",
             Feature.ORE, new OreFeatureConfig(NETHER_LAPIS_ORE, 8));
 
+    public static final List<OreFeatureConfig.Target> FERROSTONE_ORE = List.of(
+            OreFeatureConfig.createTarget(BLACKSTONE, ModBlocks.FERROSTONE.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ORE_FERROSTONE = ConfiguredFeatures.register("ferrostone_ore",
+            Feature.ORE, new OreFeatureConfig(FERROSTONE_ORE, 8));
+
     public static final List<OreFeatureConfig.Target> NETHER_DIAMOND_ORE = List.of(
             OreFeatureConfig.createTarget(BLOODSTONE, ModBlocks.NETHER_DIAMOND_ORE.getDefaultState()));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ORE_NETHER_DIAMOND = ConfiguredFeatures.register("nether_diamond_ore",

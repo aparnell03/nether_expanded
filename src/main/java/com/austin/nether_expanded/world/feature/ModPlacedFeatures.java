@@ -50,4 +50,16 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.ORE_SOUL_STONE, ModOreFeatures.modifiersWithCount(32,
                     PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
 
+    public static final RegistryEntry<PlacedFeature> ORE_NETHER_LAPIS = PlacedFeatures.register("ore_nether_lapis",
+            ModConfiguredFeatures.ORE_NETHER_LAPIS, ModOreFeatures.modifiersWithCount(32,
+                    PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
+
+    public static final RegistryEntry<PlacedFeature> ORE_FERROSTONE = PlacedFeatures.register("ore_ferrostone",
+            ModConfiguredFeatures.ORE_FERROSTONE, ModOreFeatures.modifiersWithCount(80,
+                    PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
+
+    public static final RegistryEntry<PlacedFeature> ORE_GILDED = PlacedFeatures.register("gilded_ore",
+            ModConfiguredFeatures.ORE_GILDED, ModOreFeatures.modifiersWithCount(32,
+                    PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
+
 }
