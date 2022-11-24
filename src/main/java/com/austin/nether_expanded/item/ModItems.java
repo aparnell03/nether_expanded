@@ -43,7 +43,7 @@ public class ModItems {
     public static final Item GEM_CLUSTER = registerItem("gem_cluster",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item ENCHANTED_GEM_CLUSTER = registerItem("enchanted_gem_cluster",new ShinyItem(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item WITHER_BONE = registerItem("wither_bone",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item BLOOD_ZOMBIE_SPAWN_EGG = registerItem("blood_zombie_spawn_egg",new SpawnEggItem(NetherExpanded.BLOOD_ZOMBIE, 0, 0, new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item BLOOD_ZOMBIE_SPAWN_EGG = registerItem("blood_zombie_spawn_egg",new SpawnEggItem(NetherExpanded.BLOOD_ZOMBIE, 0x861518, 0x171716, new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item WITHER_POWDER = registerItem("wither_powder",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
     public static final Item SOUL_DUST = registerItem("soul_dust",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
@@ -93,7 +93,7 @@ public class ModItems {
     public static final Item RUBY_STAFF = registerItem("ruby_staff", new RubyStaffItem(new FabricItemSettings().maxCount(1).maxDamage(150).group(ItemGroup.COMBAT)));
     public static final Item DIAMOND_STAFF = registerItem("diamond_staff", new DiamondStaffItem(new FabricItemSettings().maxCount(1).maxDamage(100).group(ItemGroup.COMBAT)));
 
-
+    public static final Item ELIXR = registerItem("elixr",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item BLACKSTONE_SWORD = registerItem("blackstone_sword",
             new SwordItem(ModToolMaterial.BLACKSTONE, 3, -2.8f,
@@ -293,8 +293,16 @@ public class ModItems {
     public static final Item WITHER_SWORD = registerItem("wither_sword",
             new WitherSwordItem(ModToolMaterial.DEMONITE, 6, -1.6f,
                     new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
+    public static final Item BLOOD_SWORD = registerItem("blood_sword",
+            new BloodSwordItem(ModToolMaterial.CRIMSONITE, 3, -1.1f,
+                    new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
 
-
+    public static final Item BLOOD_SPEAR = registerItem("blood_spear",
+            new BloodSpearItem(ModToolMaterial.DEMONITE, 4, -1.1f,
+                    new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
+    public static final Item WITHER_SPEAR = registerItem("wither_spear",
+            new WitherSpearItem(ModToolMaterial.DEMONITE, 8, -1.1f,
+                    new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(NetherExpanded.MOD_ID, name), item);

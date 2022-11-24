@@ -142,12 +142,18 @@
   "item.nether_expanded.crimsonite_sword": "Crimsonite Sword",
   "item.nether_expanded.encrusted_crimsonite_sword": "Emblazoned Crimsonite Sword",
   "item.nether_expanded.wither_sword": "Wither Sword",
+  "item.nether_expanded.blood_sword": "Blood Sword",
+
+  "item.nether_expanded.wither_spear": "Wither Spear",
+  "item.nether_expanded.blood_spear": "Blood Spear",
 
   "item.nether_expanded.quartz_staff": "Quartz Staff",
   "item.nether_expanded.amethyst_staff": "Amethyst Staff",
   "item.nether_expanded.emerald_staff": "Emerald Staff",
   "item.nether_expanded.ruby_staff": "Ruby Staff",
   "item.nether_expanded.diamond_staff": "Diamond Staff",
+
+  "item.nether_expanded.blood_zombie_spawn_egg": "Blood Zombie Spawn Egg",
 
   "item.minecraft.potion.effect.bleeding": "Potion of Bloodletting",
   "item.minecraft.potion.effect.long_bleeding": "Potion of Bloodletting",

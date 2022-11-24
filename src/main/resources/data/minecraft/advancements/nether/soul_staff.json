@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/blood_sword",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:wither_spear",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "There Will Be Another Time"
+    },
+    "description": {
+      "text": "For killing the killer of Gods."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:wither_spear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spear"
+    ]
+  ]
+}

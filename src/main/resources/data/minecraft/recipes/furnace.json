@@ -6,13 +6,13 @@
     "###"
   ],
   "key": {
-    "#": [
+    "#":
     {
-      "item": "minecraft:blackstone"
+      "item": "minecraft:cobblestone"
     }
-    ]
+
   },
   "result": {
-    "item": "minecraft:air"
+    "item": "minecraft:furnace"
   }
 }

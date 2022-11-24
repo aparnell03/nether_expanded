@@ -16,7 +16,7 @@ public class ModStatusEffects {
     public static final StatusEffect REND = new RendStatusEffect();
     public static final StatusEffect INFECT = new InfectStatusEffect();
     public static final StatusEffect XP = new XPStatusEffect();
-
+    public static final StatusEffect ENSANGUINED = new EnsanguinedStatusEffect();
 
     public static void registerModStatusEffects() {
         Registry.register(Registry.STATUS_EFFECT, new Identifier(NetherExpanded.MOD_ID, "bleeding"), BLEEDING);
@@ -27,5 +27,6 @@ public class ModStatusEffects {
         Registry.register(Registry.STATUS_EFFECT, new Identifier(NetherExpanded.MOD_ID, "rend"), REND);
         Registry.register(Registry.STATUS_EFFECT, new Identifier(NetherExpanded.MOD_ID, "infect"), INFECT);
         Registry.register(Registry.STATUS_EFFECT, new Identifier(NetherExpanded.MOD_ID, "xp"), XP);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(NetherExpanded.MOD_ID, "ensanguined"), ENSANGUINED);
     }
 }

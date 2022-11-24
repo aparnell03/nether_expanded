@@ -5,6 +5,7 @@ import com.austin.nether_expanded.block.entity.ModBlockEntities;
 import com.austin.nether_expanded.effect.ModStatusEffects;
 import com.austin.nether_expanded.enchantment.ModEnchantments;
 import com.austin.nether_expanded.entity.BloodZombieEntity;
+import com.austin.nether_expanded.entity.ModEntities;
 import com.austin.nether_expanded.item.ModItems;
 import com.austin.nether_expanded.potion.ModPotions;
 import com.austin.nether_expanded.particle.ModParticleTypes;
@@ -40,6 +41,7 @@ public class NetherExpanded implements ModInitializer {
 	public void onInitialize() {
 		FabricDefaultAttributeRegistry.register(BLOOD_ZOMBIE, BloodZombieEntity.createZombieAttributes());
 
+		ModEntities.registerModEntities();
 		ModWorldGen.generateModWorldGen();
 		ModStatusEffects.registerModStatusEffects();
 		ModEnchantments.registerModEnchantments();
@@ -50,7 +52,7 @@ public class NetherExpanded implements ModInitializer {
 		ModParticleTypes.registerModParticles();
 		ModBlockRenderer.setRenderLayers();
 		ModRecipes.register();
-		LOGGER.info("i'm so tired");
+		LOGGER.info("i love you Andrew, rest in peace <3");
 
 
 	}

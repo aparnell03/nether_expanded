@@ -1,6 +1,7 @@
 package com.austin.nether_expanded.item.custom.staffs;
 
 import com.austin.nether_expanded.effect.ModStatusEffects;
+import com.austin.nether_expanded.entity.ElixrBlob;
 import com.google.common.collect.Sets;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -42,13 +43,10 @@ public class EmeraldStaffItem extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
         if (user.experienceLevel > 0) {
             user.addExperience(-4);
-            ArrowEntity summon = EntityType.ARROW.create(user.getWorld());
-            summon.addEffect(new StatusEffectInstance(ModStatusEffects.TRANSFIGURE, 100, 1));
-            summon.setPosition((double) user.getX() + 0.5, (double) user.getY() + 1.5, (double) user.getZ() + 0.5);
-            summon.setVelocity(user, user.getPitch(), user.getYaw(), user.getRoll(), 3.5f, 1.0f);
+            ElixrBlob summon = new ElixrBlob(world, user);
+            summon.setVelocity(user, user.getPitch(), user.getYaw(), 0, 3.5f, 1.0f);
             world.spawnEntity(summon);
-
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SHULKER_SHOOT, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
+            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SLIME_SQUISH, SoundCategory.NEUTRAL, 1.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
             user.getItemCooldownManager().set(this, 50);
             itemStack.damage(1, user, (p) -> {
                 p.sendToolBreakStatus(hand);

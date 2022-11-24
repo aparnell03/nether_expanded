@@ -1,6 +1,7 @@
 package com.austin.nether_expanded.entity;
 
-import net.minecraft.entity.EntityType;
+import com.austin.nether_expanded.item.ModItems;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -12,13 +13,18 @@ import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.TurtleEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
 public class BloodZombieEntity extends ZombieEntity {
@@ -50,10 +56,16 @@ public class BloodZombieEntity extends ZombieEntity {
         boolean bl = super.tryAttack(target);
         if (bl && this.getMainHandStack().isEmpty() && target instanceof LivingEntity) {
             float f = this.world.getLocalDifficulty(this.getBlockPos()).getLocalDifficulty();
-            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 10), this);
+            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20, 10), this);
         }
 
         return bl;
+    }
+
+    @Override
+    protected void initEquipment(LocalDifficulty difficulty) {
+        this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(ModItems.BLOOD_SWORD));
+        this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0f);
     }
 
     protected void initCustomGoals() {
@@ -66,6 +78,7 @@ public class BloodZombieEntity extends ZombieEntity {
         this.targetSelector.add(3, new ActiveTargetGoal<IronGolemEntity>((MobEntity)this, IronGolemEntity.class, true));
         this.targetSelector.add(5, new ActiveTargetGoal<ZombifiedPiglinEntity>(this, ZombifiedPiglinEntity.class, 10, true, false, TurtleEntity.BABY_TURTLE_ON_LAND_FILTER));
     }
+
 
 
     protected ItemStack getSkull() {

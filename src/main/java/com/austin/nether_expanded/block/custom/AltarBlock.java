@@ -40,7 +40,7 @@ public class AltarBlock extends Block {
     }
 
     public static int getLightLevel(BlockState state, int maxLevel) {
-        return MathHelper.floor((float)(state.get(CHARGES) - 0) / 12.0f * (float)maxLevel);
+        return MathHelper.floor((float)(state.get(CHARGES)) / 12.0f * (float)maxLevel);
     }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -339,12 +339,27 @@ public class AltarBlock extends Block {
             }
             return ActionResult.success(world.isClient);
         }
+        if (itemStack.isOf(ModItems.CRIMSONITE_SWORD) && state.get(CHARGES) == 12) {
+            for(int i=0;i<2;i++){
+                AltarBlock.uncharge(world, pos, state);
+            }
+            ItemEntity item = EntityType.ITEM.create(world);
+            item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
+            item.setStack(new ItemStack(ModItems.BLOOD_SWORD));
+            world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
+            world.spawnEntity(item);
+            world.playSound(null, (double)pos.getX() + 0.5, (double)pos.getY() + 0.5, (double)pos.getZ() + 0.5, SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, SoundCategory.BLOCKS, 1.0f, 1.0f);
+            if (!player.getAbilities().creativeMode) {
+                itemStack.decrement(1);
+            }
+            return ActionResult.success(world.isClient);
+        }
+
         if (state.get(CHARGES) == 0) {
             return ActionResult.PASS;
         }
         return ActionResult.success(world.isClient);
     }
-
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         if (state.get(CHARGES) == 0) {
             return;

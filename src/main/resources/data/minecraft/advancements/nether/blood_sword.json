@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:nether/charge_blood_altar",
+  "display": {
+    "icon": {
+      "item": "nether_expanded:blood_sword",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Mathematical!"
+    },
+    "description": {
+      "text": "Made with Holy Grape Juice!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "blood_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nether_expanded:blood_sword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blood_sword"
+    ]
+  ]
+}
