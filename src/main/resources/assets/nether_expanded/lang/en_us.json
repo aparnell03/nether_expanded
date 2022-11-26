@@ -45,6 +45,7 @@
   "item.nether_expanded.tinted_glass_bottle": "Tinted Glass Bottle",
   "item.nether_expanded.lava_bottle": "Lava Bottle",
   "item.nether_expanded.warp_juice_bottle": "Bottle o' Warp Juice",
+  "item.nether_expanded.ichor_bottle": "Ichor Bottle",
 
   "item.nether_expanded.soul": "Soul",
   "item.nether_expanded.sand_soul": "Ancient Soul",
@@ -58,14 +59,19 @@
   "item.nether_expanded.bloodroot_seeds": "Bloodroot Seeds",
   "item.nether_expanded.bloodroot": "Bloodroot",
   "item.nether_expanded.golden_bloodroot": "Golden Bloodroot",
+  "item.nether_expanded.deathgrain": "Deathgrain",
 
   "item.nether_expanded.crimson_heart": "Crimson Heart",
   "item.nether_expanded.golden_heart": "Golden Heart",
   "item.nether_expanded.crimson_stew": "Crimson Stew",
   "item.nether_expanded.warped_stew": "Warped Stew",
+  "item.nether_expanded.hemo_meat": "Hemo Meat",
+  "item.nether_expanded.glistering_hemo_meat": "Glistering Hemo Meat",
 
   "item.nether_expanded.soul_fruit": "Soul Fruit",
   "item.nether_expanded.soul_shrooms": "Soul Shrooms",
+
+  "item.nether_expanded.compact_flesh": "Compacted Rotten Flesh",
 
   "item.nether_expanded.fortress_compass": "Fortress Compass",
 
@@ -316,6 +322,7 @@
   "block.nether_expanded.soul_stone": "Soul Stone",
   "block.nether_expanded.flesh_block": "Flesh Block",
   "block.nether_expanded.fermented_warped_wart_block": "Fermented Warped Wart Block",
+  "block.nether_expanded.festering_nether_wart_block": "Festering Nether Wart Block",
 
   "block.nether_expanded.bleeding_obsidian": "Bleeding Obsidian",
   "block.nether_expanded.blood_altar": "Blood Altar",
@@ -328,6 +335,8 @@
   "block.nether_expanded.blackstone_furnace": "Blackstone Furnace",
 
   "block.nether_expanded.bloodroot_crop": "Bloodroot Seeds",
+  "block.nether_expanded.deathgrain_crop": "Deathgrain Seeds",
+  "block.nether_expanded.hemomoss": "Hemomoss",
 
   "block.nether_expanded.crimsonite_ore": "Crimsonite Ore",
   "block.nether_expanded.nether_iron_ore": "Nether Iron Ore",

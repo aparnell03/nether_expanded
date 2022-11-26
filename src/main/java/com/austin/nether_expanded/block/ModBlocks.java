@@ -34,8 +34,13 @@ public class ModBlocks {
 
     public static final Block BLEEDING_OBSIDIAN = registerBlock("bleeding_obsidian",
             new BleedingObsidianBlock(FabricBlockSettings.of(Material.STONE).hardness(50.0f).resistance(1200.0f).luminance(state -> 8).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+
     public static final Block FERMENTED_WARPED_WART_BLOCK = registerBlock("fermented_warped_wart_block",
             new FermentedWarpedWartBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1.0f).resistance(0).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block FESTERING_NETHER_WART_BLOCK = registerBlock("festering_nether_wart_block",
+            new FesteringNetherWartBlock(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1.0f).resistance(0).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block FLESH_BLOCK = registerBlock("flesh_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1).resistance(1).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
 
     public static final Block BRONZE_BLOCK = registerBlock("bronze_block",
             new Block(FabricBlockSettings.of(Material.METAL).hardness(7.5f).resistance(3.5f).requiresTool().sounds(BlockSoundGroup.COPPER)), ItemGroup.BUILDING_BLOCKS);
@@ -51,8 +56,7 @@ public class ModBlocks {
     public static final Block SOUL_STONE = registerBlock("soul_stone",
             new Block(FabricBlockSettings.of(Material.STONE).hardness(6.5f).resistance(5.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 
-    public static final Block FLESH_BLOCK = registerBlock("flesh_block",
-            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).hardness(1).resistance(1).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.BUILDING_BLOCKS);
+
 
     public static final Block NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).hardness(4.25f).resistance(8.0f).requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)), ItemGroup.BUILDING_BLOCKS);
@@ -111,11 +115,16 @@ public class ModBlocks {
             new ModBarrelBlock(FabricBlockSettings.of(Material.NETHER_WOOD).hardness(2.0f).resistance(3).sounds(BlockSoundGroup.WOOD)), ItemGroup.DECORATIONS);
 
     public static final Block BLOODROOT_CROP = registerBlockWithoutBlockItem("bloodroot_crop",
-            new BloodrootCropBlock(FabricBlockSettings.copy(Blocks.NETHER_WART).nonOpaque().noCollision()), ItemGroup.FOOD);
+            new BloodrootCropBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().sounds(BlockSoundGroup.CROP)), ItemGroup.FOOD);
+    public static final Block DEATHGRAIN_CROP = registerBlockWithoutBlockItem("deathgrain_crop",
+            new DeathgrainCropBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().sounds(BlockSoundGroup.CROP)), ItemGroup.FOOD);
     public static final Block SOUL_SHROOM_CROP = registerBlockWithoutBlockItem("soul_shroom_crop",
-            new SoulShroomCropBlock(FabricBlockSettings.copy(Blocks.NETHER_WART).nonOpaque().noCollision().luminance((state) -> (state.get(SoulShroomCropBlock.AGE)+1)*3)), ItemGroup.FOOD);
+            new SoulShroomCropBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().luminance((state) -> (state.get(SoulShroomCropBlock.AGE)+1)*3).sounds(BlockSoundGroup.NETHER_WART)), ItemGroup.FOOD);
     public static final Block SOUL_FRUIT_BUSH = registerBlockWithoutBlockItem("soul_fruit_bush",
-            new SoulFruitBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH).nonOpaque().noCollision().luminance((state) -> (state.get(SoulFruitBushBlock.AGE)-1)*6)), ItemGroup.FOOD);
+            new SoulFruitBushBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().luminance((state) -> (state.get(SoulFruitBushBlock.AGE)-1)*6).sounds(BlockSoundGroup.SWEET_BERRY_BUSH)), ItemGroup.FOOD);
+
+    public static final Block HEMOMOSS_BLOCK = registerBlock("hemomoss",
+            new HemomossBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().sounds(BlockSoundGroup.SLIME)), ItemGroup.FOOD);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group){
         return Registry.register(Registry.BLOCK, new Identifier(NetherExpanded.MOD_ID, name), block);

@@ -6,7 +6,10 @@ import net.minecraft.world.gen.feature.OreConfiguredFeatures;
 import net.minecraft.world.gen.feature.OrePlacedFeatures;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 public class ModPlacedFeatures {
 
@@ -62,4 +65,5 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.ORE_GILDED, ModOreFeatures.modifiersWithCount(32,
                     PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
 
+    public static final RegistryEntry<PlacedFeature> SOUL_BUSH_PATCH = PlacedFeatures.register("soul_bush_patch", ModConfiguredFeatures.PATCH_SOUL_BUSH,PlacedFeatures.BOTTOM_TO_TOP_RANGE, BiomePlacementModifier.of());
 }

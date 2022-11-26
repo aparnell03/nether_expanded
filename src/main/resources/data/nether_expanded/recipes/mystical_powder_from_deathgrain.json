@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "X#X",
+        "XXX"
+    ],
+    "key": {
+        "#":
+        {
+            "item": "nether_expanded:mystical_powder"
+        },
+        "X":
+        {
+            "item": "nether_expanded:deathgrain"
+        }
+
+    },
+    "result": {
+        "item": "nether_expanded:mystical_powder",
+        "count": 2
+    }
+}

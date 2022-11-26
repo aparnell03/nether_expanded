@@ -3,6 +3,7 @@ package com.austin.nether_expanded.item;
 import com.austin.nether_expanded.NetherExpanded;
 import com.austin.nether_expanded.block.ModBlocks;
 import com.austin.nether_expanded.effect.ModStatusEffects;
+import com.austin.nether_expanded.entity.ModEntities;
 import com.austin.nether_expanded.item.custom.*;
 import com.austin.nether_expanded.item.custom.armor.CrimsoniteArmorItem;
 import com.austin.nether_expanded.item.custom.armor.DemoniteArmorItem;
@@ -45,7 +46,7 @@ public class ModItems {
     public static final Item GEM_CLUSTER = registerItem("gem_cluster",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item ENCHANTED_GEM_CLUSTER = registerItem("enchanted_gem_cluster",new ShinyItem(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item WITHER_BONE = registerItem("wither_bone",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item BLOOD_ZOMBIE_SPAWN_EGG = registerItem("blood_zombie_spawn_egg",new SpawnEggItem(NetherExpanded.BLOOD_ZOMBIE, 0x861518, 0x171716, new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item BLOOD_ZOMBIE_SPAWN_EGG = registerItem("blood_zombie_spawn_egg",new SpawnEggItem(ModEntities.BLOOD_ZOMBIE, 0x861518, 0x171716, new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item WITHER_POWDER = registerItem("wither_powder",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
     public static final Item SOUL_DUST = registerItem("soul_dust",new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
@@ -70,7 +71,12 @@ public class ModItems {
     public static final Item GLOW_SOUL = registerItem("glow_soul",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
     public static final Item SOUL_FRAGMENT = registerItem("soul_fragment",new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item DEATHGRAIN = registerItem("deathgrain",new Item(new FabricItemSettings().group(ItemGroup.FOOD)));
+    public static final Item HEMO_MEAT = registerItem("hemo_meat",new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().snack().hunger(8).saturationModifier(0.5f).build())));
+    public static final Item GLISTERING_HEMO_MEAT = registerItem("glistering_hemo_meat",new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().snack().hunger(12).saturationModifier(1.2f).build())));
+
     public static final Item BLOODROOT_SEEDS = registerItem("bloodroot_seeds",new BlockItem(ModBlocks.BLOODROOT_CROP, new FabricItemSettings().group(ItemGroup.FOOD)));
+    public static final Item DEATHGRAIN_SEEDS = registerItem("deathgrain_seeds",new BlockItem(ModBlocks.DEATHGRAIN_CROP, new FabricItemSettings().group(ItemGroup.FOOD)));
 
     public static final Item SOUL_FRUIT = registerItem("soul_fruit",(Item)new AliasedBlockItem(ModBlocks.SOUL_FRUIT_BUSH, new Item.Settings().group(ItemGroup.BREWING).food(new FoodComponent.Builder().alwaysEdible().hunger(2).saturationModifier(0.2f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 0), 1.0f).build())));
     public static final Item SOUL_SHROOMS = registerItem("soul_shrooms",(Item)new AliasedBlockItem(ModBlocks.SOUL_SHROOM_CROP, new Item.Settings().group(ItemGroup.BREWING).food(new FoodComponent.Builder().snack().alwaysEdible().hunger(1).saturationModifier(0.1f).statusEffect(new StatusEffectInstance(ModStatusEffects.XP, 200, 0), 0.5f).build())));
@@ -81,8 +87,10 @@ public class ModItems {
     public static final Item GOLDEN_HEART = registerItem("golden_heart",new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().alwaysEdible().hunger(5).saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 80, 2), 1.0f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 1), 1.0f).build())));
     public static final Item CRIMSON_STEW = registerItem("crimson_stew",new StewItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1).food(new FoodComponent.Builder().hunger(4).saturationModifier(.2f).build())));
     public static final Item WARPED_STEW = registerItem("warped_stew",new StewItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(1).food(new FoodComponent.Builder().hunger(6).saturationModifier(1f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1.0F).statusEffect(new StatusEffectInstance(ModStatusEffects.TELEPORT, 1, 1), 1.0F).build())));
-    public static final Item WARP_JUICE_BOTTLE = registerItem("warp_juice_bottle", new WarpJuiceBottleItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(16).food(new FoodComponent.Builder().alwaysEdible().hunger(4).saturationModifier(0.5f).build())));
+    public static final Item WARP_JUICE_BOTTLE = registerItem("warp_juice_bottle", new WarpJuiceBottleItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(4).food(new FoodComponent.Builder().alwaysEdible().hunger(4).saturationModifier(0.5f).build())));
+    public static final Item ICHOR_BOTTLE = registerItem("ichor_bottle", new IchorBottleItem(new FabricItemSettings().group(ItemGroup.FOOD).maxCount(4).food(new FoodComponent.Builder().alwaysEdible().hunger(0).saturationModifier(0.1f).build())));
     public static final Item ELIXR = registerItem("elixr",new ElixrItem(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().alwaysEdible().hunger(10).saturationModifier(2.0f).build())));
+    public static final Item COMPACT_FLESH = registerItem("compact_flesh",new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(7).saturationModifier(0.7f).build())));
 
     public static final Item FORTRESS_COMPASS = registerItem("fortress_compass",new FortressCompassItem(new FabricItemSettings().maxCount(1).group(ItemGroup.TOOLS)));
 

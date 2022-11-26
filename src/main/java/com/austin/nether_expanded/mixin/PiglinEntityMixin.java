@@ -14,6 +14,7 @@ import net.minecraft.entity.mob.WitherSkeletonEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
@@ -116,8 +117,8 @@ public abstract class PiglinEntityMixin extends AbstractPiglinEntity{
             }
         }
     }
-        @Inject(method = "initEquipment(Lnet/minecraft/world/LocalDifficulty;)V", at = @At(value = "TAIL"))
-    protected void initEquipment(LocalDifficulty ld, CallbackInfo cb) {
+        @Inject(method = "initEquipment(Lnet/minecraft/util/math/random/Random;Lnet/minecraft/world/LocalDifficulty;)V", at = @At(value = "TAIL"))
+    protected void initEquipment(Random random, LocalDifficulty ld, CallbackInfo cb) {
         if(isWarrior()){
             this.equipStack(EquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
             this.equipStack(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));

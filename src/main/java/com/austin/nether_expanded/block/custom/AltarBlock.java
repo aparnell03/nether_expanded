@@ -112,17 +112,11 @@ public class AltarBlock extends Block {
             }
             return ActionResult.success(world.isClient);
         }
-        if (itemStack.isOf(Item.fromBlock(ModBlocks.FLESH_BLOCK)) && state.get(CHARGES) > 0) {
+        if (itemStack.isOf((ModBlocks.FLESH_BLOCK).asItem()) && state.get(CHARGES) > 0) {
             AltarBlock.uncharge(world, pos, state);
-            Random random = new Random();
             ItemEntity item = EntityType.ITEM.create(world);
             item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
-            if(random.nextInt(3) == 0) {
-                item.setStack(new ItemStack(ModItems.ELIXR));
-
-            }else{
-                item.setStack(new ItemStack(Blocks.NETHER_WART_BLOCK));
-            }
+            item.setStack(new ItemStack(ModItems.ELIXR));
             world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
             world.spawnEntity(item);
             if (!player.getAbilities().creativeMode) {
@@ -132,10 +126,9 @@ public class AltarBlock extends Block {
         }
         if (itemStack.isOf(Items.NETHER_WART_BLOCK) && state.get(CHARGES) > 0) {
             AltarBlock.uncharge(world, pos, state);
-            Random random = new Random();
             ItemEntity item = EntityType.ITEM.create(world);
             item.setPos(pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5);
-            player.addExperience(random.nextInt(5));
+            player.addExperience(1);
             world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, item.getX(), item.getY(), item.getZ(), 0, 0, 0);
             world.spawnEntity(item);
             if (!player.getAbilities().creativeMode) {

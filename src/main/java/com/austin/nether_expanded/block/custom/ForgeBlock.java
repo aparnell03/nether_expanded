@@ -15,10 +15,10 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Random;
 
 public class ForgeBlock extends AbstractFurnaceBlock {
     public ForgeBlock(AbstractBlock.Settings settings) {

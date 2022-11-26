@@ -16,7 +16,8 @@
     "PiglinEntityMixin",
     "PiglinSpecificSensorMixin",
     "SkeletonEntityMixin",
-    "WitherSkeletonEntityMixin"
+    "WitherSkeletonEntityMixin",
+    "YLevelsMixin"
   ],
   "client": [
     "MinecraftClientMixin",

@@ -1,6 +1,6 @@
 package com.austin.nether_expanded.item.custom;
 
-import com.austin.nether_expanded.world.gen.ModConfiguredStructureFeatureTags;
+import com.austin.nether_expanded.world.gen.ModStructureTags;
 import com.mojang.logging.LogUtils;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +18,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 import net.minecraft.world.poi.PointOfInterestType;
+import net.minecraft.world.poi.PointOfInterestTypes;
 import org.slf4j.Logger;
 
 import java.util.Optional;
@@ -50,17 +51,19 @@ public class FortressCompassItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (world.isClient) {
-            return;
-        }
-        if (CompassItem.hasLodestone(stack)) {
-            BlockPos blockPos;
-            NbtCompound nbtCompound = stack.getOrCreateNbt();
-            if (nbtCompound.contains(FORTRESS_TRACKED_KEY) && !nbtCompound.getBoolean(FORTRESS_TRACKED_KEY)) {
-                return;
-            }
-            Optional<RegistryKey<World>> optional = CompassItem.getLodestoneDimension(nbtCompound);
-            if (optional.isPresent() && optional.get() == world.getRegistryKey() && nbtCompound.contains(FORTRESS_POS_KEY) && (!world.isInBuildLimit(blockPos = NbtHelper.toBlockPos(nbtCompound.getCompound(FORTRESS_POS_KEY))) || !((ServerWorld)world).getPointOfInterestStorage().hasTypeAt(PointOfInterestType.LODESTONE, blockPos))) {
-                nbtCompound.remove(FORTRESS_POS_KEY);
+            if (hasFortress(stack)) {
+                NbtCompound nbtCompound = stack.getOrCreateNbt();
+                if (nbtCompound.contains("LodestoneTracked") && !nbtCompound.getBoolean("LodestoneTracked")) {
+                    return;
+                }
+
+                Optional<RegistryKey<World>> optional = getFortressDimension(nbtCompound);
+                if (optional.isPresent() && optional.get() == world.getRegistryKey() && nbtCompound.contains("LodestonePos")) {
+                    BlockPos blockPos = NbtHelper.toBlockPos(nbtCompound.getCompound("LodestonePos"));
+                    if (!world.isInBuildLimit(blockPos) || !((ServerWorld)world).getPointOfInterestStorage().hasTypeAt(PointOfInterestTypes.LODESTONE, blockPos)) {
+                        nbtCompound.remove("LodestonePos");
+                    }
+                }
             }
         }
     }
@@ -71,7 +74,7 @@ public class FortressCompassItem extends Item {
         BlockPos blockPos;
         ItemStack itemStack = user.getStackInHand(hand);
             user.setCurrentHand(hand);
-        if (world instanceof ServerWorld && (blockPos = (serverWorld = (ServerWorld)world).locateStructure(ModConfiguredStructureFeatureTags.FORTRESS, user.getBlockPos(), 100, false)) != null) {
+        if (world instanceof ServerWorld && (blockPos = (serverWorld = (ServerWorld)world).locateStructure(ModStructureTags.FORTRESS, user.getBlockPos(), 100, false)) != null) {
                 world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_LODESTONE_COMPASS_LOCK, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
                 this.writeNbt(world.getRegistryKey(), blockPos, itemStack.getOrCreateNbt());
                 return TypedActionResult.success(itemStack);
@@ -86,7 +89,7 @@ public class FortressCompassItem extends Item {
 
     @Override
     public String getTranslationKey(ItemStack stack) {
-        return CompassItem.hasLodestone(stack) ? "item.nether_expanded.fortress_compass" : super.getTranslationKey(stack);
+        return hasFortress(stack) ? "item.nether_expanded.fortress_compass" : super.getTranslationKey(stack);
     }
 }
 

@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop":"nether_expanded:block/deathgrain_stage5"
+  }
+}

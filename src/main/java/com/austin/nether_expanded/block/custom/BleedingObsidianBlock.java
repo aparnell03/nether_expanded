@@ -1,14 +1,12 @@
 package com.austin.nether_expanded.block.custom;
 
-import com.austin.nether_expanded.particle.ModParticleTypes;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CryingObsidianBlock;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class BleedingObsidianBlock extends CryingObsidianBlock {
     public BleedingObsidianBlock(Settings settings) {

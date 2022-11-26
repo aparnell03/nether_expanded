@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gold_nugget"
+    },
+    "#": {
+      "item": "nether_expanded:hemo_meat"
+    }
+  },
+  "result": {
+    "item": "nether_expanded:glistering_hemo_meat"
+  }
+}

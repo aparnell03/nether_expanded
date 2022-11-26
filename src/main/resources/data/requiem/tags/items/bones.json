@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:bone",
-    "nether_expanded:wither_bone"
+    { "id": "nether_expanded:wither_bone", "required": false }
   ]
 }

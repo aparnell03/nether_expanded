@@ -7,6 +7,7 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 import java.util.List;
 
@@ -87,7 +88,7 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ORE_SOUL_STONE = ConfiguredFeatures.register("soul_stone_ore",
             Feature.ORE, new OreFeatureConfig(SOUL_STONE_ORE, 4));
 
-
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PATCH_SOUL_BUSH = ConfiguredFeatures.register("patch_soul_bush", Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.SOUL_FRUIT_BUSH)), List.of(Blocks.WARPED_NYLIUM)));
 
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + NetherExpanded.MOD_ID);

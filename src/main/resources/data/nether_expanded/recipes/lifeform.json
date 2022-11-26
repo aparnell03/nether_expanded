@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DMD",
+    "WEI",
+    "HGH"
+  ],
+  "key": {
+    "W":
+    {
+      "item": "nether_expanded:warp_juice_bottle"
+    },
+    "E":
+    {
+      "item": "nether_expanded:elixr"
+    },
+    "I":
+    {
+      "item": "nether_expanded:ichor_bottle"
+    },
+    "G":
+    {
+      "item": "nether_expanded:glistering_hemo_meat"
+    },
+    "H":
+    {
+      "item": "nether_expanded:hemo_meat"
+    },
+    "D":
+    {
+      "item": "nether_expanded:deathgrain"
+    },
+    "M":
+    {
+      "item": "nether_expanded:mystical_powder"
+    }
+
+  },
+  "result": {
+    "item": "nether_expanded:deathgrain_seeds",
+    "count": 2
+  }
+}

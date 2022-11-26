@@ -10,6 +10,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.WitherSkeletonEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -23,8 +24,8 @@ public class WitherSkeletonEntityMixin extends MobEntity{
         super(entityType, world);
     }
 
-    @Inject(method = "initEquipment(Lnet/minecraft/world/LocalDifficulty;)V", at = @At(value = "TAIL"))
-    protected void initEquipment(LocalDifficulty ld, CallbackInfo cb) {
+    @Inject(method = "initEquipment(Lnet/minecraft/util/math/random/Random;Lnet/minecraft/world/LocalDifficulty;)V", at = @At(value = "TAIL"))
+    protected void initEquipment(Random random, LocalDifficulty ld, CallbackInfo cb) {
         ((WitherSkeletonEntity) (Object) this).equipStack(EquipmentSlot.MAINHAND, new ItemStack(ModItems.BLACKSTONE_SWORD));
         if (random.nextFloat() <= 0.25f){
             ((WitherSkeletonEntity) (Object) this).equipStack(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));

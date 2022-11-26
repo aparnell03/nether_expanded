@@ -9,9 +9,10 @@ import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldView;
 
-import java.util.Random;
 
 public class BloodrootCropBlock extends CropBlock {
 
@@ -36,6 +37,11 @@ public class BloodrootCropBlock extends CropBlock {
         if (world.getBaseLightLevel(pos, 0) >= 5 && (i = this.getAge(state)) < this.getMaxAge() && random.nextInt((int) + 1) == 0) {
             world.setBlockState(pos, this.withAge(i + 1), Block.NOTIFY_LISTENERS);
         }
+    }
+
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return (world.getBaseLightLevel(pos, 0) >= 8 || world.isSkyVisible(pos)) && super.canPlaceAt(state, world, pos);
     }
 
     @Override

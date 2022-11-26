@@ -27,11 +27,7 @@ import org.slf4j.LoggerFactory;
 
 public class NetherExpanded implements ModInitializer {
 
-	public static final EntityType<BloodZombieEntity> BLOOD_ZOMBIE = Registry.register(
-			Registry.ENTITY_TYPE,
-			new Identifier(NetherExpanded.MOD_ID, "blood_zombie"),
-			FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, BloodZombieEntity::new).dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build()
-	);
+
 
 	public static final String MOD_ID = "nether_expanded";
 	public static final Logger LOGGER = LoggerFactory.getLogger("nether_expanded");
@@ -39,7 +35,6 @@ public class NetherExpanded implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		FabricDefaultAttributeRegistry.register(BLOOD_ZOMBIE, BloodZombieEntity.createZombieAttributes());
 
 		ModEntities.registerModEntities();
 		ModWorldGen.generateModWorldGen();

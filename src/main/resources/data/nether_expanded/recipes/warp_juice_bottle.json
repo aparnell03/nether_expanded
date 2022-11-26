@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    " # "
+  ],
+  "key": {
+    "#":
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    "X":
+    {
+      "item": "nether_expanded:deathgrain"
+    }
+
+  },
+  "result": {
+    "item": "nether_expanded:warp_juice_bottle",
+    "count": 1
+  }
+}

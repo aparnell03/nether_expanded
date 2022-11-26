@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:golden_apple",
-    { "id": "nether_expanded:golden_heart", "required": false }
+    { "id": "nether_expanded:golden_heart", "required": false },
+    { "id": "nether_expanded:soul_jar", "required": false }
   ]
 }

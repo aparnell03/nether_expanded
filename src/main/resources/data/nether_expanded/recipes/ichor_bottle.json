@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether_expanded:glistering_hemo_meat"
+    },
+    {
+      "item": "nether_expanded:tinted_glass_bottle"
+    },
+    {
+      "item": "nether_expanded:tinted_glass_bottle"
+    },
+    {
+      "item": "nether_expanded:tinted_glass_bottle"
+    },
+    {
+      "item": "nether_expanded:tinted_glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "nether_expanded:ichor_bottle",
+    "count": 4
+  }
+}

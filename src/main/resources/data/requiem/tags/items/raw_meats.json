@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#c:raw_meats",
+    "minecraft:rotten_flesh",
+    { "id": "nether_expanded:crimson_heart", "required": false },
+    { "id": "nether_expanded:compact_flesh", "required": false },
+    { "id": "nether_expanded:hemo_meat", "required": false },
+    { "id": "biomemakeover:raw_toad", "required": false },
+    { "id": "llamarama:raw_llama_meat", "required": false }
+  ]
+}

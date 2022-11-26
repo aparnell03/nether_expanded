@@ -15,6 +15,7 @@ import net.minecraft.entity.passive.TurtleEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
@@ -33,7 +34,7 @@ public class BloodZombieEntity extends ZombieEntity {
     }
 
     protected boolean burnsInDaylight() {
-        return false;
+        return true;
     }
 
     protected SoundEvent getAmbientSound() {
@@ -56,14 +57,14 @@ public class BloodZombieEntity extends ZombieEntity {
         boolean bl = super.tryAttack(target);
         if (bl && this.getMainHandStack().isEmpty() && target instanceof LivingEntity) {
             float f = this.world.getLocalDifficulty(this.getBlockPos()).getLocalDifficulty();
-            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20, 10), this);
+            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 0), this);
         }
 
         return bl;
     }
 
     @Override
-    protected void initEquipment(LocalDifficulty difficulty) {
+    protected void initEquipment(Random Random, LocalDifficulty difficulty) {
         this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(ModItems.BLOOD_SWORD));
         this.setEquipmentDropChance(EquipmentSlot.MAINHAND, 0f);
     }

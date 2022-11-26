@@ -19,7 +19,6 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -72,7 +71,7 @@ public class ForgeBlockEntity extends BlockEntity implements NamedScreenHandlerF
 
     @Override
     public Text getDisplayName() {
-        return new TranslatableText("container.forge");
+        return Text.translatable("container.forge");
     }
 
     @Nullable
